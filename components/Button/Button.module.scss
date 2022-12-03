@@ -1,0 +1,30 @@
+@import "../../styles/main.scss";
+
+.button {
+    max-width: toRem(219px);
+    max-height: toRem(64px);
+    border-radius: toRem(3px);
+    font-size: toRem(16px);
+    line-height: toRem(50px);
+    font-weight: 500;
+    font-family: $font-family-primary;
+    border: none;
+    padding: toRem(10px) toRem(42px);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.primary {
+    background-color: $color-blue;
+    color: $color-white;
+    position: relative;
+
+    @include button-hover($color-blue-hover);
+    @include button-focus($color-white);
+}
+
+.secondary {
+    background-color: $color-yellow2;
+    color: $color-black;
+}

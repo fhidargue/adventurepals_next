@@ -1,0 +1,10 @@
+{
+    "backgroundImage": "/images/homepage/disney.png",
+    "label": "Marketing Solution",
+    "title": "We Are Business Marketing Agency",
+    "buttonType": "primary",
+    "buttonText": "FIND SOLUTION",
+    "buttonAlt": "FIND SOLUTION",
+    "buttonTarget": "_self",
+    "buttonUrl": "#"
+}
