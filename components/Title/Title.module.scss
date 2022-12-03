@@ -1,4 +1,4 @@
-@import "../../styles/main.scss";
+@import '../../styles/main.scss';
 
 .h1 {
     font-family: $font-family-secondary;
@@ -15,6 +15,35 @@
         font-size: toRem(42px);
         line-height: toRem(50px);
     }
+}
+
+.h2 {
+    font-family: $font-family-secondary;
+    font-size: toRem(60px);
+    line-height: toRem(72px);
+    font-weight: 800;
+
+    @media #{$breakpoint-tablet} {
+        font-size: toRem(50px);
+        line-height: toRem(62px);
+    }
+
+    @media #{$breakpoint-mobile} {
+        font-size: toRem(40px);
+        line-height: toRem(52px);
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
 }
 
 .white {

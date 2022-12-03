@@ -1,6 +1,6 @@
-import styles from "./HomepageHero.module.scss";
-import data from "./heroData.json";
-import { Button, Label, Title } from "../../components";
+import styles from './HomepageHero.module.scss';
+import data from './hero.json';
+import { Button, Label, Title } from '../../components';
 
 const HomepageHero = () => {
     return (

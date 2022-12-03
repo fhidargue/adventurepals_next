@@ -1,0 +1,27 @@
+@import '../../styles/main.scss';
+
+.text {
+    @include type-main-copy();
+}
+
+.block {
+    display: block;
+}
+
+.xs {
+    @include font-size(12px);
+}
+
+.sm {
+    @include font-size(16px);
+}
+
+.md {
+    @include font-size(18px);
+    line-height: toRem(34px);
+}
+
+.lg {
+    @include font-size(30px);
+    line-height: toRem(40px);
+}

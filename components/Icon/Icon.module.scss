@@ -1,0 +1,65 @@
+@import '../../styles/main.scss';
+
+// Desktop icon sizes
+$icon-size-xs: toRem(12px);
+$icon-size-sm: toRem(16px);
+$icon-size-md: toRem(24px);
+$icon-size-lg: toRem(32px);
+$icon-size-xl: toRem(48px);
+$icon-size-xxl: toRem(72px);
+
+// Mobile icon sizes
+$icon-size-xxl-mobile: toRem(56px);
+
+.svg {
+    pointer-events: none;
+}
+
+.inline {
+    display: inline;
+    line-height: 1em;
+}
+
+.xs {
+    width: $icon-size-xs;
+    height: $icon-size-xs;
+}
+
+.sm {
+    width: $icon-size-sm;
+    height: $icon-size-sm;
+}
+
+.md {
+    width: $icon-size-md;
+    height: $icon-size-md;
+}
+
+.lg {
+    width: $icon-size-lg;
+    height: $icon-size-lg;
+
+    @media #{$breakpoint-mobile} {
+        width: $icon-size-md;
+        height: $icon-size-md;
+    }
+}
+
+.xl {
+    width: $icon-size-xl;
+    height: $icon-size-xl;
+}
+
+.xxl {
+    width: $icon-size-xxl;
+    height: $icon-size-xxl;
+
+    @media #{$breakpoint-mobile} {
+        width: $icon-size-xxl-mobile;
+        height: $icon-size-xxl-mobile;
+    }
+}
+
+.full-width {
+    width: 100%;
+}

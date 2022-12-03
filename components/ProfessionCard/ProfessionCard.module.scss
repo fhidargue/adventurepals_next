@@ -1,0 +1,58 @@
+@import '../../styles/main.scss';
+
+.card {
+    max-width: toRem(264px);
+    min-width: toRem(264px);
+    max-height: toRem(105px);
+    padding: toRem(17px);
+    background-color: $color-white;
+    display: flex;
+    align-items: center;
+    gap: toRem(21px);
+    border-radius: toRem(3px);
+
+    @media #{$breakpoint-mobile} {
+        max-width: none;
+        justify-content: center;
+        gap: toRem(40px);
+    }
+
+    @media #{$breakpoint-mobile-xs} {
+        gap: 0;
+    }
+}
+
+.iconContainer {
+    background-color: $color-grey5;
+    border-radius: 50%;
+    width: toRem(72px);
+    height: toRem(72px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media #{$breakpoint-mobile-xs} {
+        margin-right: toRem(16px);
+    }
+}
+
+.textContainer {
+    max-width: toRem(133px);
+
+    @media #{$breakpoint-mobile-xs} {
+        max-width: toRem(90px);
+    }
+}
+
+.profession {
+    font-size: toRem(20px);
+    line-height: toRem(32px);
+
+    @media #{$breakpoint-tablet} {
+        @include type-main-copy();
+    }
+
+    @media #{$breakpoint-mobile-xs} {
+        @include type-small-copy();
+    }
+}
