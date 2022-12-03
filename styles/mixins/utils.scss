@@ -1,0 +1,107 @@
+@function toRem($size) {
+    $remSize: $size / $font-size-base;
+    @return #{$remSize}rem;
+}
+
+@function toRemValue($size) {
+    $remSize: $size / 16;
+    @return $remSize;
+}
+
+@function spacing($size) {
+    $space: $size * 8;
+    $rem: toRemValue($space);
+    @return #{$rem}rem;
+}
+
+@mixin border-radius() {
+    border-radius: 4px;
+}
+
+@mixin box-shadow() {
+    box-shadow: 0 1px 6px 0 rgba(29, 29, 29, 0.3);
+}
+
+@mixin box-shadow--hover() {
+    box-shadow: 0 6px 27px -5px rgba(0, 0, 0, 0.3);
+}
+
+@mixin visually-hidden() {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 0.06rem;
+    margin: 0.06rem;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 0.06rem;
+
+    &:active,
+    &:focus {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+    }
+
+    a:focus,
+    a:hover {
+        position: static;
+        width: auto;
+        height: auto;
+    }
+}
+
+// The target element has to have all it's content inside an element
+// with the .inner class.
+@mixin aspect-ratio($width, $height) {
+    position: relative;
+
+    &::before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: ($height / $width) * 100%;
+    }
+
+    > .inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+}
+
+.sr-only {
+    @include visually-hidden();
+}
+
+@mixin object-fit-images-polyfill {
+    &--object-fit {
+        &-cover {
+            height: 100%;
+            object-fit: cover;
+            font-family: "object-fit: cover;";
+        }
+        &-contain {
+            object-fit: contain;
+            font-family: "object-fit: contain;";
+        }
+    }
+}
+
+@mixin ellipsis($before: true) {
+    content: "\2026";
+    font-size: toRem(16px);
+    display: inline-block;
+    @if ($before) {
+        margin-right: toRem(2.5px);
+        margin-left: toRem(-8px);
+    } @else {
+        margin-left: toRem(2.5px);
+        margin-right: toRem(-8px);
+    }
+}

@@ -1,0 +1,9 @@
+@import "../../styles/main.scss";
+
+.primary {
+    font-size: toRem(20px);
+    line-height: toRem(30px);
+    font-weight: 700;
+    color: $color-yellow2;
+    margin-bottom: toRem(27px);
+}

@@ -1,0 +1,22 @@
+@import "../../styles/main.scss";
+
+.h1 {
+    font-family: $font-family-secondary;
+    font-size: toRem(100px);
+    line-height: toRem(110px);
+    font-weight: 800;
+
+    @media #{$breakpoint-tablet} {
+        font-size: toRem(75px);
+        line-height: toRem(80px);
+    }
+
+    @media #{$breakpoint-mobile} {
+        font-size: toRem(42px);
+        line-height: toRem(50px);
+    }
+}
+
+.white {
+    color: $color-white;
+}
