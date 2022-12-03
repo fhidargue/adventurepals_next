@@ -1,4 +1,4 @@
-@import "./main.scss";
+@import './main.scss';
 
 *,
 *::before,
@@ -13,7 +13,7 @@ body {
     flex-direction: column;
     align-items: stretch;
     font-size: $font-size-base;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1,
@@ -37,10 +37,86 @@ main {
 }
 
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
 }
 
 .bold {
     font-weight: 700;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.white {
+    color: $color-white;
+}
+
+.richBlack {
+    color: $color-rich-black;
+}
+
+.black {
+    color: $color-black;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lineHeightP {
+    line-height: 1.5;
+    margin-bottom: toRem(24px);
+    @media #{$breakpoint-mobile} {
+        margin-bottom: toRem(19.2px);
+    }
+}
+
+.largeCopy {
+    @include type-large-copy();
+}
+
+.mediumCopy {
+    @include type-medium-copy();
+}
+
+.mainCopy {
+    @include type-main-copy();
+}
+
+.smallCopy {
+    @include type-small-copy();
+}
+
+.extraSmallCopy {
+    @include type-extra-small-copy();
+}
+
+.allCapsCopy {
+    @include type-all-caps-copy();
+}
+
+.h2 {
+    @include type-heading-2();
+}
+
+.h3 {
+    @include type-heading-3();
+}
+
+.h4 {
+    @include type-heading-4();
+}
+
+.cta {
+    @include type-base-copy();
+}
+
+.secondary {
+    font-family: $font-family-secondary;
 }

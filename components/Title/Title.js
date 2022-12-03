@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import styles from "./Title.module.scss";
+import PropTypes from 'prop-types';
+import styles from './Title.module.scss';
 
 const Title = (props) => {
     const { level, textAlign, id, tabIndex, title, style, color, className } =
@@ -12,7 +12,9 @@ const Title = (props) => {
             <Tag
                 id={id}
                 tabIndex={tabIndex}
-                className={`${styles[textAlign]} ${styles[style]} ${styles[color]} ${className}`}
+                className={`${textAlign && styles[textAlign]} ${
+                    styles[style]
+                } ${styles[color]} ${className}`}
             >
                 {title}
             </Tag>

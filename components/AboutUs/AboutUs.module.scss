@@ -1,0 +1,146 @@
+@import '../../styles/main.scss';
+
+.aboutUs {
+    background-color: $color-grey;
+}
+
+.wrapper {
+    max-width: toRem(1135px);
+    margin: 0 auto;
+    display: flex;
+    gap: toRem(30px);
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: toRem(140px) 0;
+
+    @media #{$breakpoint-tablet} {
+        flex-direction: column;
+        padding: toRem(80px) toRem(32px);
+    }
+
+    @media #{$breakpoint-mobile} {
+        padding: toRem(50px) toRem(32px);
+    }
+}
+
+.leftContent {
+    width: 50%;
+    position: relative;
+
+    @media #{$breakpoint-tablet} {
+        width: 100%;
+    }
+}
+
+.backImage {
+    object-fit: cover;
+    background-position: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0 0 0 toRem(8px) $color-white;
+    border-radius: toRem(5px);
+    height: toRem(612px);
+
+    @media (min-width: 1025px) and (max-width: 1160px) {
+        left: toRem(32px);
+    }
+}
+
+.frontImage {
+    object-fit: cover;
+    background-position: left;
+    position: absolute;
+    bottom: toRem(-15px);
+    right: toRem(22px);
+    z-index: 2;
+    box-shadow: 0 0 0 toRem(8px) $color-white;
+    border-radius: toRem(5px);
+    height: toRem(340px);
+}
+
+.rightContent {
+    width: 50%;
+    max-width: toRem(547px);
+
+    @media #{$breakpoint-tablet} {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+.title {
+    margin-bottom: toRem(40px);
+
+    @media #{$breakpoint-mobile} {
+        margin-bottom: toRem(32px);
+    }
+}
+
+.cards {
+    display: flex;
+    gap: toRem(24px);
+    margin-bottom: toRem(40px);
+
+    @media (min-width: 1025px) and (max-width: 1160px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media #{$breakpoint-mobile} {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: toRem(24px);
+    }
+}
+
+.cardSize {
+    @media #{$breakpoint-mobile} {
+        width: 100%;
+    }
+}
+
+.description {
+    font-weight: 500;
+    margin-bottom: toRem(24px);
+
+    @media #{$breakpoint-mobile} {
+        margin-bottom: toRem(16px);
+    }
+}
+
+.mision {
+    margin-bottom: toRem(24px);
+    max-width: toRem(489px);
+}
+
+.circle {
+    min-width: toRem(186px);
+    min-height: toRem(186px);
+    position: absolute;
+    right: 0;
+    bottom: 35%;
+    background-color: $color-rich-black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50%;
+    box-shadow: 0 0 0 toRem(8px) $color-white;
+    z-index: 3;
+}
+
+.circleText {
+    font-size: toRem(22px);
+    line-height: toRem(50px);
+    color: $color-white;
+}
+
+.circleTitle {
+    font-size: toRem(48px);
+    line-height: toRem(50px);
+}
