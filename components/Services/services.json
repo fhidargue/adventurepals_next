@@ -1,0 +1,61 @@
+{
+    "label": "WHAT WE OFFER",
+    "title": "We’re Offering Business Marketing Service",
+    "description": "Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor anagi icdunt",
+    "cta": {
+        "text": "View All Services",
+        "link": "https://google.com",
+        "target": "_blank",
+        "type": "primary"
+    },
+    "services": [
+        {
+            "icon": "megaphone-lines",
+            "background": "isabelline",
+            "title": "Marketing",
+            "features": [
+                "Marketing Automation",
+                "Lead Generation",
+                "Seo Marketing"
+            ],
+            "button": {
+                "text": "Read More",
+                "link": "#",
+                "target": "_blank",
+                "type": "tertiary"
+            }
+        },
+        {
+            "icon": "paintbucket",
+            "background": "snow",
+            "title": "Web Design",
+            "features": [
+                "Web Design",
+                "Interaction Design",
+                "Interaction Design"
+            ],
+            "button": {
+                "text": "Read More",
+                "link": "#",
+                "target": "_blank",
+                "type": "tertiary"
+            }
+        },
+        {
+            "icon": "scan",
+            "background": "honeydew",
+            "title": "Development",
+            "features": [
+                "UI Development",
+                "Digital Production",
+                "App Development"
+            ],
+            "button": {
+                "text": "Read More",
+                "link": "#",
+                "target": "_blank",
+                "type": "tertiary"
+            }
+        }
+    ]
+}

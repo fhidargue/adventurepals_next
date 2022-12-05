@@ -22,8 +22,16 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul,
+ol {
     margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
 }
 
 header,
@@ -119,4 +127,8 @@ code {
 
 .secondary {
     font-family: $font-family-secondary;
+}
+
+.tertiary {
+    font-family: $font-family-tertiary;
 }

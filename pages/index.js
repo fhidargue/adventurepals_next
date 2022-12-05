@@ -1,12 +1,12 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import { AboutUs, HomepageHero } from '../components';
+import { AboutUs, HomepageHero, Video, Services } from '../components';
 
 export default function Home() {
     return (
         <>
             <HomepageHero />
             <AboutUs />
+            <Video />
+            <Services />
         </>
     );
 }

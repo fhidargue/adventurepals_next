@@ -12,7 +12,7 @@
     border-radius: toRem(3px);
 
     @media #{$breakpoint-mobile} {
-        max-width: none;
+        min-width: 0;
         justify-content: center;
         gap: toRem(40px);
     }

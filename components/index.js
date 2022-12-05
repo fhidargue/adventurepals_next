@@ -6,3 +6,7 @@ export { default as AboutUs } from './AboutUs';
 export { default as Icon } from './Icon';
 export { default as Text } from './Text';
 export { default as ProfessionCard } from './ProfessionCard';
+export { default as Video } from './Video';
+export { default as Services } from './Services';
+export { default as Link } from './Link';
+export { default as ServiceCard } from './ServiceCard';

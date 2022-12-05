@@ -1,5 +1,6 @@
-import PropTypes from "prop-types";
-import styles from "./Button.module.scss";
+import PropTypes from 'prop-types';
+import styles from './Button.module.scss';
+import { Icon } from '../../components';
 
 const Button = (props) => {
     const {
@@ -37,7 +38,7 @@ const Button = (props) => {
             target={linkTarget}
             aria-expanded={ariaExpanded}
             aria-haspopup={ariaHasPopup}
-            type={submit ? "submit" : buttonType}
+            type={submit ? 'submit' : buttonType}
             aria-label={ariaLabel}
             aria-hidden={ariaHidden}
             tabIndex={tabIndex}
@@ -48,7 +49,7 @@ const Button = (props) => {
             onBlur={onBlur}
             onKeyDown={onKeyDown}
         >
-            {text}
+            <span>{text}</span>
         </Tag>
     );
 };
@@ -83,15 +84,15 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
-    text: "Button",
-    type: "primary",
-    size: "md",
-    color: "white",
+    text: 'Button',
+    type: 'primary',
+    size: 'md',
+    color: 'white',
     ariaExpanded: null,
     ariaHasPopup: null,
     submit: false,
     disabled: false,
-    buttonType: "button",
+    buttonType: 'button',
 };
 
 export default Button;

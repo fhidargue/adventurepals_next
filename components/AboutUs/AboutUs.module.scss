@@ -4,6 +4,65 @@
     background-color: $color-grey;
 }
 
+.layer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.yellowCircle {
+    position: absolute;
+    top: toRem(273px);
+    left: toRem(185px);
+
+    @media (max-width: 1630px) {
+        top: toRem(80px);
+    }
+
+    @media #{$breakpoint-tablet} {
+        display: none;
+    }
+}
+
+.threeLines {
+    position: absolute;
+    left: toRem(182px);
+    top: toRem(703px);
+
+    @media (max-width: 1630px) {
+        top: toRem(850px);
+        left: toRem(240px);
+    }
+
+    @media (max-width: 1165px) {
+        display: none;
+    }
+}
+
+.roundLine {
+    position: absolute;
+    right: toRem(70px);
+    top: toRem(132px);
+
+    @media (max-width: 1380px) {
+        top: toRem(32px);
+    }
+
+    @media #{$breakpoint-tablet} {
+        display: none;
+    }
+}
+
+.singleLine {
+    position: absolute;
+    right: toRem(214px);
+    top: toRem(857px);
+
+    @media (max-width: 1165px) {
+        display: none;
+    }
+}
+
 .wrapper {
     max-width: toRem(1135px);
     margin: 0 auto;
@@ -12,15 +71,15 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding: toRem(140px) 0;
+    padding: toRem(140px) 0 toRem(170px);
 
     @media #{$breakpoint-tablet} {
         flex-direction: column;
-        padding: toRem(80px) toRem(32px);
+        padding: toRem(80px) toRem(32px) toRem(90px);
     }
 
     @media #{$breakpoint-mobile} {
-        padding: toRem(50px) toRem(32px);
+        padding: toRem(50px) toRem(32px) toRem(70px);
     }
 }
 

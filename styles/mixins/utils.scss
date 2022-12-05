@@ -61,7 +61,7 @@
 
     &::before {
         display: block;
-        content: "";
+        content: '';
         width: 100%;
         padding-top: ($height / $width) * 100%;
     }
@@ -84,17 +84,17 @@
         &-cover {
             height: 100%;
             object-fit: cover;
-            font-family: "object-fit: cover;";
+            font-family: 'object-fit: cover;';
         }
         &-contain {
             object-fit: contain;
-            font-family: "object-fit: contain;";
+            font-family: 'object-fit: contain;';
         }
     }
 }
 
 @mixin ellipsis($before: true) {
-    content: "\2026";
+    content: '\2026';
     font-size: toRem(16px);
     display: inline-block;
     @if ($before) {

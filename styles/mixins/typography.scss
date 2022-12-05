@@ -14,7 +14,6 @@
     font-style: normal;
 }
 
-// TODO: remove old Unitron typography
 @mixin type-body-sm() {
     @include type-small-copy();
 }
@@ -67,7 +66,6 @@
     }
 }
 
-// All Day Clear Typography Mixin names
 @mixin type-heading-1() {
     @include type-body-base();
     @include font-size(100px);

@@ -34,6 +34,18 @@
     }
 }
 
+.h3 {
+    font-family: $font-family-secondary;
+    font-size: toRem(28px);
+    line-height: toRem(24px);
+    font-weight: 800;
+
+    @media #{$breakpoint-tablet} {
+        font-size: toRem(20px);
+        line-height: toRem(18px);
+    }
+}
+
 .center {
     text-align: center;
 }

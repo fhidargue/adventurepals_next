@@ -38,11 +38,6 @@ $icon-size-xxl-mobile: toRem(56px);
 .lg {
     width: $icon-size-lg;
     height: $icon-size-lg;
-
-    @media #{$breakpoint-mobile} {
-        width: $icon-size-md;
-        height: $icon-size-md;
-    }
 }
 
 .xl {

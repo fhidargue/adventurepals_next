@@ -1,0 +1,26 @@
+@import '../../styles/main.scss';
+
+.link {
+    font-family: $font-family-tertiary;
+    font-size: toRem(20px);
+    line-height: toRem(72px);
+    text-decoration: none;
+    position: relative;
+}
+
+.primary {
+    font-weight: 600;
+    color: $color-black;
+    border-bottom: toRem(2px) solid $color-black;
+
+    @include button-focus($color-black);
+    @include button-hover-outline($color-black);
+
+    &:hover::after,
+    &:focus::after {
+        top: toRem(-6px);
+        bottom: toRem(-6px);
+        left: toRem(-6px);
+        right: toRem(-6px);
+    }
+}

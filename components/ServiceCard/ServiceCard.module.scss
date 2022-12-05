@@ -1,0 +1,53 @@
+@import '../../styles/main.scss';
+
+.serviceCard {
+    background-color: $color-white;
+    border: toRem(1px) solid $color-black;
+    border-radius: toRem(5px);
+    height: 100%;
+}
+
+.content {
+    padding: toRem(44px);
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: toRem(30px);
+}
+
+.iconContainer {
+    width: toRem(82px);
+    height: toRem(82px);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.isabelline {
+    background-color: $color-isabelline;
+}
+
+.snow {
+    background-color: $color-snow;
+}
+
+.honeydew {
+    background-color: $color-honeydew;
+}
+
+.features {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}

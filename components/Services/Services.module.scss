@@ -1,0 +1,108 @@
+@import '../../styles/main.scss';
+
+.services {
+    background-color: $color-floral;
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.wrapper {
+    max-width: toRem(1170px);
+    margin: 0 auto;
+    padding: toRem(130px) 0;
+
+    @media #{$breakpoint-tablet} {
+        padding: toRem(80px) toRem(32px);
+    }
+}
+
+.label {
+    margin-bottom: toRem(20px);
+}
+
+.topSection {
+    width: 100%;
+    display: flex;
+    gap: toRem(24px);
+    margin-bottom: toRem(77px);
+
+    @media #{$breakpoint-mobile} {
+        flex-direction: column;
+        margin-bottom: toRem(40px);
+    }
+}
+
+.serviceList {
+    display: flex;
+
+    & li {
+        flex-grow: 1;
+    }
+
+    & li:not(:last-child) {
+        margin-right: toRem(30px);
+
+        @media #{$breakpoint-tablet} {
+            margin-right: toRem(16px);
+        }
+
+        @media (max-width: 930px) {
+            margin-right: 0;
+            margin-bottom: toRem(32px);
+        }
+    }
+
+    @media (max-width: 930px) {
+        flex-direction: column;
+    }
+}
+
+.yellowCircle {
+    position: absolute;
+    top: toRem(153px);
+    right: toRem(159px);
+
+    @media #{$breakpoint-tablet} {
+        top: toRem(60px);
+    }
+}
+
+.roundLine {
+    position: absolute;
+    top: toRem(250px);
+    left: toRem(152px);
+
+    @media (max-width: 1680px) {
+        width: toRem(37px);
+        height: toRem(46px);
+        top: toRem(340px);
+    }
+
+    @media #{$breakpoint-tablet} {
+        display: none;
+    }
+}
+
+.stroke {
+    position: absolute;
+    top: toRem(680px);
+    right: toRem(50px);
+
+    @media (max-width: 1610px) {
+        width: toRem(100px);
+        height: toRem(80px);
+    }
+
+    @media (max-width: 1480px) {
+        top: toRem(870px);
+        right: toRem(50px);
+    }
+
+    @media #{$breakpoint-tablet} {
+        display: none;
+    }
+}

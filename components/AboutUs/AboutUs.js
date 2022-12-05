@@ -11,6 +11,36 @@ const AboutUs = () => {
     return (
         <>
             <section className={styles.aboutUs}>
+                <div className={styles.layer}>
+                    <Image
+                        src="/figures/yellow-circle.png"
+                        alt="yellow circle"
+                        width={27}
+                        height={21}
+                        className={styles.yellowCircle}
+                    />
+                    <Image
+                        src="/figures/three-lines.png"
+                        alt="three lines"
+                        width={53}
+                        height={54}
+                        className={styles.threeLines}
+                    />
+                    <Image
+                        src="/figures/round-line.png"
+                        alt="round line"
+                        width={97}
+                        height={106}
+                        className={styles.roundLine}
+                    />
+                    <Image
+                        src="/figures/single-line.png"
+                        alt="single line"
+                        width={70}
+                        height={34}
+                        className={styles.singleLine}
+                    />
+                </div>
                 <div className={styles.wrapper}>
                     <div className={styles.leftContent}>
                         {!isTablet ? (
