@@ -39,11 +39,11 @@
 .serviceList {
     display: flex;
 
-    & li {
+    & .serviceItem {
         flex-grow: 1;
     }
 
-    & li:not(:last-child) {
+    & .serviceItem:not(:last-child) {
         margin-right: toRem(30px);
 
         @media #{$breakpoint-tablet} {
@@ -59,6 +59,10 @@
     @media (max-width: 930px) {
         flex-direction: column;
     }
+}
+
+.serviceItem {
+    display: block;
 }
 
 .yellowCircle {

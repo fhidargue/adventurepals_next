@@ -30,7 +30,7 @@ const ServiceCard = (props) => {
                 <ul className={styles.features}>
                     {service.features.map((feature, index) => {
                         return (
-                            <div className={styles.item} key={index}>
+                            <li className={styles.item} key={index}>
                                 <Icon
                                     name="check"
                                     alt="check icon"
@@ -38,7 +38,7 @@ const ServiceCard = (props) => {
                                     size="md"
                                 />
                                 <Text text={feature} size="md" color="black" />
-                            </div>
+                            </li>
                         );
                     })}
                 </ul>
