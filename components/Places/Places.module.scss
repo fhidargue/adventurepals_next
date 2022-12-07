@@ -1,0 +1,45 @@
+@import "../../styles/main.scss";
+
+.places {
+    padding: toRem(80px) 0;
+}
+
+.topSection {
+    max-width: toRem(768px);
+    margin: 0 auto toRem(77px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper {
+    background-image: url("/images/components/places-background.png");
+    margin-bottom: toRem(90px);
+    width: 100%;
+    padding: toRem(90px) toRem(32px);
+}
+
+.placeCards {
+    max-width: toRem(1770px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    & li:not(:last-child) {
+        margin-right: toRem(30px);
+
+        @media #{$breakpoint-tablet} {
+            margin-right: 0;
+        }
+    }
+
+    & li {
+        flex-grow: 1;
+    }
+
+    @media #{$breakpoint-tablet} {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: toRem(30px);
+    }
+}

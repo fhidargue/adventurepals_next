@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@import "../../styles/main.scss";
 
 .button {
     max-width: toRem(219px);
@@ -47,7 +47,7 @@
 
     & span {
         &::after {
-            content: url('/icons/arrow-right.svg');
+            content: url("/icons/arrow-right.svg");
             margin-left: toRem(8px);
             position: relative;
             top: toRem(6px);
@@ -60,9 +60,47 @@
 
         & span {
             &::after {
-                content: url('/icons/arrow-right-white.svg');
+                content: url("/icons/arrow-right-white.svg");
             }
         }
+    }
+}
+
+.tertiaryDark {
+    background-color: $color-black;
+    color: $color-white;
+    text-decoration: none;
+
+    @include button-hover($color-grey4);
+    @include button-focus($color-grey4);
+
+    &:focus::after {
+        top: toRem(-4px);
+        bottom: toRem(-4px);
+        left: toRem(-4px);
+        right: toRem(-4px);
+    }
+
+    @media #{$breakpoint-mobile} {
+        width: 100%;
+        max-width: none;
+    }
+}
+
+.icon {
+    background-color: $color-rich-black;
+    padding: toRem(15px);
+    border-radius: 50%;
+
+    @include button-hover($color-blue);
+    @include button-focus($color-black);
+
+    &:focus::after {
+        border-radius: 50%;
+        top: toRem(-4px);
+        bottom: toRem(-4px);
+        left: toRem(-4px);
+        right: toRem(-4px);
     }
 }
 

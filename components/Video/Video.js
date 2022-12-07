@@ -1,19 +1,19 @@
-import { useState } from 'react';
-import { Icon } from '../../components';
-import Image from 'next/image';
-import data from './video.json';
-import styles from './Video.module.scss';
+import { useState } from "react";
+import { Icon } from "../../components";
+import Image from "next/image";
+import data from "./video.json";
+import styles from "./Video.module.scss";
 
 const Video = () => {
     const youtubeEmbedUrl =
-        'https://www.youtube.com/embed/{0}?autoplay=1&rel=0';
+        "https://www.youtube.com/embed/{0}?autoplay=1&rel=0";
     const [showVideo, setShowVideo] = useState(null);
     let videoId = data.video;
 
     const videoIdRegex =
         /(youtu\.be\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v)\/))([^\?&"'>]+)/;
 
-    if (data.video && data.video.includes('youtube')) {
+    if (data.video && data.video.includes("youtube")) {
         videoId = data.video.match(videoIdRegex)[5];
     }
 
@@ -29,7 +29,7 @@ const Video = () => {
                     <button
                         className={styles.playButton}
                         aria-label={`Play video ${
-                            data.altTextVideo ? data.altTextVideo : ''
+                            data.altTextVideo ? data.altTextVideo : ""
                         }`}
                         onClick={initYoutubeVideo}
                     >
@@ -40,6 +40,7 @@ const Video = () => {
                     <div className={styles.inner}>
                         <Image
                             fill
+                            priority
                             src={data.thumbnail}
                             alt={data.altText || data.altTextVideo}
                         />
@@ -52,7 +53,7 @@ const Video = () => {
                             type="text/html"
                             width="100%"
                             height="100%"
-                            src={youtubeEmbedUrl.replace('{0}', videoId)}
+                            src={youtubeEmbedUrl.replace("{0}", videoId)}
                             frameBorder="0"
                             allowFullScreen
                         />
