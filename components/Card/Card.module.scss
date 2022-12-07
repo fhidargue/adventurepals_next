@@ -1,0 +1,35 @@
+@import "../../styles/main.scss";
+
+.card {
+    max-width: toRem(1170px);
+    padding: toRem(70px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: toRem(100px);
+    background-image: url("/images/components/card-background.png");
+    border: toRem(2px) solid $color-black;
+
+    @media #{$breakpoint-tablet} {
+        width: calc(100% - toRem(64px));
+        gap: toRem(50px);
+    }
+
+    @media #{$breakpoint-mobile} {
+        flex-direction: column-reverse;
+        gap: toRem(32px);
+        padding: toRem(40px);
+    }
+}
+
+.description {
+    font-size: toRem(26px);
+    line-height: toRem(38px);
+    font-weight: 500;
+
+    @media #{$breakpoint-tablet} {
+        font-size: toRem(20px);
+        line-height: toRem(24px);
+    }
+}

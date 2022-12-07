@@ -1,0 +1,49 @@
+@import "../../styles/main.scss";
+
+$image-width: 525px;
+$image-height: 455px;
+
+.placeCard {
+    background-color: $color-white;
+    border: toRem(2px) solid $color-black;
+
+    @media #{$breakpoint-tablet} {
+        max-width: toRem(390px);
+        min-width: toRem(390px);
+    }
+
+    @media #{$breakpoint-mobile} {
+        min-width: toRem(190px);
+    }
+}
+
+.top {
+    padding: toRem(22px);
+    border-bottom: toRem(2px) solid $color-black;
+}
+
+.imageContainer {
+    position: relative;
+    @include aspect-ratio($image-width, $image-height);
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: toRem(30px) toRem(45px);
+
+    @media #{$breakpoint-tablet} {
+        padding: toRem(20px) toRem(25px);
+    }
+}
+
+.iconButton {
+    width: toRem(32px);
+    height: toRem(32px);
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+}

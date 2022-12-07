@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@import "../../styles/main.scss";
 
 .primary {
     font-size: toRem(20px);
@@ -14,4 +14,11 @@
     font-weight: 500;
     color: $color-grey4;
     margin-bottom: toRem(13px);
+}
+
+.tertiary {
+    font-size: toRem(14px);
+    line-height: toRem(14px);
+    color: $color-rich-black;
+    margin-bottom: toRem(4px);
 }

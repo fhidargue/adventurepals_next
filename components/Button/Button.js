@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
-import styles from './Button.module.scss';
-import { Icon } from '../../components';
+import PropTypes from "prop-types";
+import styles from "./Button.module.scss";
+import { Icon } from "../../components";
 
 const Button = (props) => {
     const {
@@ -25,6 +25,7 @@ const Button = (props) => {
         buttonType,
         onFocus,
         onBlur,
+        children,
     } = props;
 
     const Tag = tag;
@@ -38,7 +39,7 @@ const Button = (props) => {
             target={linkTarget}
             aria-expanded={ariaExpanded}
             aria-haspopup={ariaHasPopup}
-            type={submit ? 'submit' : buttonType}
+            type={submit ? "submit" : buttonType}
             aria-label={ariaLabel}
             aria-hidden={ariaHidden}
             tabIndex={tabIndex}
@@ -49,7 +50,7 @@ const Button = (props) => {
             onBlur={onBlur}
             onKeyDown={onKeyDown}
         >
-            <span>{text}</span>
+            {text && !children ? <span>{text}</span> : children}
         </Tag>
     );
 };
@@ -81,18 +82,22 @@ Button.propTypes = {
     asLoader: PropTypes.bool,
     buttonType: PropTypes.string,
     url: PropTypes.string,
+    children: PropTypes.oneOfType([
+        PropTypes.arrayOf(PropTypes.node),
+        PropTypes.node,
+    ]),
 };
 
 Button.defaultProps = {
-    text: 'Button',
-    type: 'primary',
-    size: 'md',
-    color: 'white',
+    text: "Button",
+    type: "primary",
+    size: "md",
+    color: "white",
     ariaExpanded: null,
     ariaHasPopup: null,
     submit: false,
     disabled: false,
-    buttonType: 'button',
+    buttonType: "button",
 };
 
 export default Button;

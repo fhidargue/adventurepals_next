@@ -1,0 +1,40 @@
+{
+    "label": "NEW CASE STUDIES",
+    "title": "List of some of our recent client's work",
+    "places": [
+        {
+            "image": "/images/places/parks/animal-kingdom.png",
+            "imageAlt": "Animal kongdom park",
+            "label": "BRANDING",
+            "title": "Digital Production",
+            "buttonAlt": "Go to Animal Kingdom's page",
+            "buttonUrl": "/parks/animal-kingdom",
+            "buttonTarget": "_blank"
+        },
+        {
+            "image": "/images/places/parks/epcot.png",
+            "imageAlt": "Epcot park",
+            "label": "BRANDING",
+            "title": "Digital Production",
+            "buttonAlt": "Go to Epcot's page",
+            "buttonUrl": "/parks/epcot",
+            "buttonTarget": "_blank"
+        },
+        {
+            "image": "/images/places/parks/hollywood-studios.png",
+            "imageAlt": "Hollywood studios park",
+            "label": "BRANDING",
+            "title": "Digital Production",
+            "buttonAlt": "Go to Hollywood studios's page",
+            "buttonUrl": "/parks/hollywood-studios",
+            "buttonTarget": "_blank"
+        }
+    ],
+    "card": {
+        "description": "We stay curious even at this stage, and we challenge the solution until our approach works.",
+        "buttonText": "MORE WORK",
+        "buttonUrl": "https://google.com",
+        "buttonTarget": "_blank",
+        "backgroundImage": "/images/components/card-background.png"
+    }
+}

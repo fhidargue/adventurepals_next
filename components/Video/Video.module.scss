@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@import "../../styles/main.scss";
 
 .video {
     position: relative;
@@ -38,6 +38,19 @@
     width: 100%;
     height: 100%;
     z-index: 1;
+}
+
+.inner {
+    position: relative;
+    height: toRem(605px);
+
+    @media #{$breakpoint-tablet} {
+        height: toRem(480px);
+    }
+
+    @media #{$breakpoint-mobile} {
+        height: toRem(350px);
+    }
 }
 
 .videoThumbnail {
