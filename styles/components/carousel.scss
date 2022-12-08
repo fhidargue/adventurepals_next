@@ -1,0 +1,14 @@
+@import "../base/variables";
+
+.swiper-pagination-bullet {
+    width: toRem(12px) !important;
+    height: toRem(12px) !important;
+    margin: 0 toRem(6px) !important;
+    background-color: transparent !important;
+    border: toRem(1px) solid $color-white;
+    opacity: 1 !important;
+
+    &.swiper-pagination-bullet-active {
+        background-color: $color-white !important;
+    }
+}

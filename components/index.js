@@ -14,3 +14,4 @@ export { default as ServiceCard } from "./ServiceCard";
 export { default as Places } from "./Places";
 export { default as Card } from "./Card";
 export { default as PlaceCard } from "./PlaceCard";
+export { default as Carousel } from "./Carousel";

@@ -1,41 +1,70 @@
-import styles from './HomepageHero.module.scss';
-import data from './hero.json';
-import { Button, Label, Title } from '../../components';
+import styles from "./HomepageHero.module.scss";
+import data from "./hero.json";
+import { Button, Label, Title } from "../../components";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, A11y, Autoplay, EffectFade } from "swiper";
+
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/effect-fade";
 
 const HomepageHero = () => {
     return (
-        <>
-            <section
-                className={styles.container}
-                style={{
-                    backgroundImage: `url(${data.backgroundImage})`,
+        <section className={styles.container}>
+            <Swiper
+                modules={[Autoplay, Pagination, A11y, EffectFade]}
+                slidesPerView={1}
+                loop={true}
+                centeredSlides={true}
+                autoplay={{
+                    delay: 10000000,
+                    disableOnInteraction: false,
                 }}
+                speed={1000}
+                effect={"fade"}
+                pagination={{
+                    clickable: true,
+                }}
+                className={styles.carousel}
             >
-                <div className={styles.layer}></div>
-                <div className={styles.wrapper}>
-                    <Label text={data.label} type="primary" />
-                    <Title
-                        title={data.title}
-                        className={styles.title}
-                        level="h1"
-                        style="h1"
-                        textAlign="center"
-                        color="white"
-                    />
-                    <Button
-                        tag="button"
-                        buttonType="button"
-                        text={data.buttonText}
-                        type={data.buttonType}
-                        ariaLabel={data.buttonAlt}
-                        linkTarget={data.buttonTarget}
-                        onClick={(e) => {
-                            e.currentTarget.blur();
-                        }}
-                    />
-                </div>
-            </section>
-        </>
+                {data.slides.map((slide, index) => {
+                    return (
+                        <SwiperSlide key={`Homepage slide ${index + 1}`}>
+                            <div
+                                className={styles.slideContainer}
+                                style={{
+                                    backgroundImage: `url(${slide.backgroundImage})`,
+                                }}
+                            >
+                                <div className={styles.layer}></div>
+                                <div className={styles.wrapper}>
+                                    <Label text={slide.label} type="primary" />
+                                    <Title
+                                        title={slide.title}
+                                        className={styles.title}
+                                        level="h1"
+                                        style="h1"
+                                        textAlign="center"
+                                        color="white"
+                                    />
+                                    <Button
+                                        tag="button"
+                                        buttonType="button"
+                                        text={slide.buttonText}
+                                        type={slide.buttonType}
+                                        ariaLabel={slide.buttonAlt}
+                                        linkTarget={slide.buttonTarget}
+                                        onClick={(e) => {
+                                            e.currentTarget.blur();
+                                        }}
+                                    />
+                                </div>
+                            </div>
+                        </SwiperSlide>
+                    );
+                })}
+            </Swiper>
+        </section>
     );
 };
 

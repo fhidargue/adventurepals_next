@@ -1,4 +1,11 @@
-import { AboutUs, HomepageHero, Video, Services, Places } from "../components";
+import {
+    AboutUs,
+    HomepageHero,
+    Video,
+    Services,
+    Places,
+    Carousel,
+} from "../components";
 
 export default function Home() {
     return (
