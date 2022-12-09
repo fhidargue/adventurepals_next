@@ -4,7 +4,7 @@ import {
     Video,
     Services,
     Places,
-    Carousel,
+    Information,
 } from "../components";
 
 export default function Home() {
@@ -15,6 +15,7 @@ export default function Home() {
             <Video />
             <Services />
             <Places />
+            <Information />
         </>
     );
 }

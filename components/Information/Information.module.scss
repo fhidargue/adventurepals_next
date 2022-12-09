@@ -1,0 +1,35 @@
+@import "../../styles/main.scss";
+
+.container {
+    padding: toRem(120px) toRem(32px);
+    background-color: $color-seashell;
+}
+
+.wrapper {
+    max-width: toRem(1136px);
+    margin: 0 auto;
+}
+
+.title {
+    margin-bottom: toRem(77px);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    height: toRem(467px);
+}
+
+.leftSide {
+    width: 50%;
+    position: relative;
+
+    & img {
+        max-width: toRem(466px);
+        aspect-ratio: 1 / 1;
+    }
+}
+
+.rightSide {
+    width: 50%;
+}

@@ -15,3 +15,5 @@ export { default as Places } from "./Places";
 export { default as Card } from "./Card";
 export { default as PlaceCard } from "./PlaceCard";
 export { default as Carousel } from "./Carousel";
+export { default as Loader } from "./Loader";
+export { default as Information } from "./Information";
