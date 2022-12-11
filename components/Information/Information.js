@@ -6,6 +6,29 @@ import { Title, Accordion } from "../../components";
 const Information = () => {
     return (
         <section className={styles.container}>
+            <div className={styles.layer}>
+                <Image
+                    src="/figures/yellow-circle.png"
+                    alt="yellow circle"
+                    width={18}
+                    height={18}
+                    className={styles.yellowCircle}
+                />
+                <Image
+                    src="/figures/circle.png"
+                    alt="round line"
+                    width={16}
+                    height={16}
+                    className={styles.circle}
+                />
+                <Image
+                    src="/figures/double-circle-line.png"
+                    alt="stroke line"
+                    width={113}
+                    height={84}
+                    className={styles.doubleCircle}
+                />
+            </div>
             <div className={styles.wrapper}>
                 <Title
                     className={styles.title}
@@ -20,7 +43,10 @@ const Information = () => {
                         <Image src={data.image} alt={data.imageAlt} fill />
                     </div>
                     <div className={styles.rightSide}>
-                        {/* <Accordion data={data.accordion} /> */}
+                        <Accordion
+                            accordion={data.accordion}
+                            textColor="richBlack"
+                        />
                     </div>
                 </div>
             </div>

@@ -5,6 +5,8 @@ import {
     Services,
     Places,
     Information,
+    TeamMembers,
+    ContactBanner,
 } from "../components";
 
 export default function Home() {
@@ -16,6 +18,8 @@ export default function Home() {
             <Services />
             <Places />
             <Information />
+            <TeamMembers />
+            <ContactBanner />
         </>
     );
 }

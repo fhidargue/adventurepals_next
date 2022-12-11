@@ -17,3 +17,7 @@ export { default as PlaceCard } from "./PlaceCard";
 export { default as Carousel } from "./Carousel";
 export { default as Loader } from "./Loader";
 export { default as Information } from "./Information";
+export { default as Accordion } from "./Accordion";
+export { default as TeamMembers } from "./TeamMembers";
+export { default as MemberCard } from "./MemberCard";
+export { default as ContactBanner } from "./ContactBanner";

@@ -1,0 +1,44 @@
+@import "../../styles/main.scss";
+
+.banner {
+    background-image: url("/images/components/card-background.png");
+    padding: toRem(80px) toRem(32px);
+    border-top: toRem(2px) solid $color-black;
+    border-bottom: toRem(2px) solid $color-black;
+
+    @media #{$breakpoint-mobile} {
+        padding: toRem(60px) toRem(32px);
+    }
+}
+
+.wrapper {
+    max-width: toRem(1170px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: toRem(120px);
+
+    @media #{$breakpoint-tablet} {
+        flex-direction: column;
+        gap: toRem(40px);
+    }
+}
+
+.question {
+    font-size: toRem(48px);
+    line-height: toRem(68px);
+
+    @media #{$breakpoint-tablet} {
+        text-align: center;
+    }
+
+    @media #{$breakpoint-mobile} {
+        font-size: toRem(24px);
+        line-height: toRem(32px);
+    }
+}
+
+.button {
+    min-width: toRem(219px);
+}

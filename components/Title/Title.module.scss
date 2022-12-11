@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@import "../../styles/main.scss";
 
 .h1 {
     font-family: $font-family-secondary;
@@ -60,4 +60,12 @@
 
 .white {
     color: $color-white;
+}
+
+.black {
+    color: $color-black;
+}
+
+.richBlack {
+    color: $color-rich-black;
 }
