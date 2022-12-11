@@ -87,6 +87,26 @@
     }
 }
 
+.linkButton {
+    width: 100%;
+    max-height: none;
+    max-width: none;
+    justify-content: flex-start;
+
+    @include button-focus($color-black);
+
+    & div {
+        font-size: toRem(24px);
+        line-height: toRem(36px);
+        font-weight: 600;
+
+        @media #{$breakpoint-tablet} {
+            font-size: toRem(18px);
+            line-height: toRem(24px);
+        }
+    }
+}
+
 .icon {
     background-color: $color-rich-black;
     padding: toRem(15px);

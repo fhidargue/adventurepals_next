@@ -1,0 +1,23 @@
+{
+    "title": "We can help you to accelerate your online growth.",
+    "image": "/images/places/parks/magic-kingdom.png",
+    "imageAlt": "Information component image",
+    "accordion": [
+        {
+            "title": "Insights and analysis",
+            "information": "We believe that strategy is about creating patterns in a disparate mix of ideas, whether that's building new processes your channel approach to keep pace with the social first world."
+        },
+        {
+            "title": "Social listening",
+            "information": "We believe that strategy is about creating patterns in a disparate mix of ideas, whether that's building new processes your channel approach to keep pace with the social first world."
+        },
+        {
+            "title": "Data infrastructure",
+            "information": "We believe that strategy is about creating patterns in a disparate mix of ideas, whether that's building new processes your channel approach to keep pace with the social first world."
+        },
+        {
+            "title": "Data infrastructure",
+            "information": "We believe that strategy is about creating patterns in a disparate mix of ideas, whether that's building new processes your channel approach to keep pace with the social first world."
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+@import "../../styles/main.scss";
+
+.team {
+    padding: toRem(80px) 0;
+}
+
+.topSection {
+    max-width: toRem(768px);
+    margin: 0 auto toRem(77px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media #{$breakpoint-tablet} {
+        padding: 0 toRem(32px);
+    }
+}
+
+.wrapper {
+    width: 100%;
+    padding: 0 toRem(32px) 0;
+}
+
+.memberCards {
+    max-width: toRem(1570px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: toRem(30px);
+
+    & li {
+        flex-grow: 1;
+    }
+
+    @media (max-width: 1450px) {
+        display: grid;
+        grid-template-columns: toRem(320px) toRem(320px);
+    }
+
+    @media #{$breakpoint-mobile} {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

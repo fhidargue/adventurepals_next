@@ -26,6 +26,7 @@ const Button = (props) => {
         onFocus,
         onBlur,
         children,
+        className,
     } = props;
 
     const Tag = tag;
@@ -33,7 +34,7 @@ const Button = (props) => {
     return (
         <Tag
             ref={buttonRef}
-            className={`${styles.button} ${styles[type]} ${styles[color]}`}
+            className={`${styles.button} ${styles[type]} ${styles[color]} ${className}`}
             onClick={onClick}
             href={url}
             target={linkTarget}

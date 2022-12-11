@@ -1,0 +1,30 @@
+@import "../../styles/main.scss";
+
+.loaderContainer {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.loaderWrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $color-background;
+    opacity: 0.7;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    background-color: transparent;
+    width: toRem(80px);
+    height: toRem(80px);
+
+    @media #{$breakpoint-tablet} {
+        width: toRem(60px);
+        height: toRem(60px);
+    }
+}

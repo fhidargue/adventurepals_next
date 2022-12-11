@@ -1,0 +1,74 @@
+@import "../../styles/main.scss";
+
+$animation-time: 0.3s;
+
+.accordion {
+    width: 100%;
+}
+
+.section {
+    display: block;
+    transition: all $animation-time ease-out;
+    max-width: toRem(996px);
+
+    @media #{$breakpoint-mobile} {
+        max-width: none;
+    }
+}
+
+.list {
+    width: 100%;
+    display: block;
+
+    & .section:not(:first-child) {
+        & .heading {
+            padding-top: toRem(24px);
+        }
+    }
+
+    & .section:first-child {
+        & .heading {
+            &:focus:after {
+                top: toRem(-5px);
+            }
+        }
+    }
+}
+
+.heading {
+    width: 100%;
+    position: relative;
+    padding: 0 0 toRem(24px);
+    border-bottom: solid toRem(2px) $color-black;
+    justify-content: left;
+    border-radius: 0;
+    justify-content: space-between;
+    background-color: transparent;
+
+    &:focus:after {
+        top: toRem(20px);
+        bottom: toRem(20px);
+        left: toRem(-6px);
+        right: toRem(-6px);
+    }
+}
+
+.headingIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+    max-height: 0;
+    line-height: toRem(32px);
+}
+
+.contentOpen {
+    padding: toRem(28px) 0 0;
+    max-height: toRem(1500px);
+    height: auto;
+    transition: all 0.2s ease-in-out;
+}

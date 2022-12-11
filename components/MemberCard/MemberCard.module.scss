@@ -1,0 +1,57 @@
+@import "../../styles/main.scss";
+
+.card {
+    background-color: $color-snow;
+    border-radius: toRem(5px);
+    max-width: toRem(320px);
+    min-width: toRem(320px);
+    height: 100%;
+
+    @media #{$breakpoint-mobile} {
+        max-width: none;
+        min-width: 0;
+        width: 100%;
+    }
+}
+
+.imageContainer {
+    height: toRem(420px);
+    position: relative;
+
+    & img {
+        object-fit: cover;
+    }
+
+    @media #{$breakpoint-mobile} {
+        height: toRem(300px);
+    }
+}
+
+.info {
+    padding: toRem(40px) 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.position {
+    background-color: $color-rich-black;
+    color: $color-white;
+    width: fit-content;
+    padding: toRem(8px);
+    margin-bottom: toRem(11px);
+    min-width: toRem(95px);
+    text-align: center;
+}
+
+.name {
+    font-size: toRem(24px);
+    line-height: toRem(24px);
+    font-weight: 600;
+
+    @media #{$breakpoint-tablet} {
+        font-size: toRem(18px);
+        line-height: toRem(20px);
+    }
+}
