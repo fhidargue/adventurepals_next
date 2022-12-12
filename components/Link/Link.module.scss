@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@import "../../styles/main.scss";
 
 .link {
     font-family: $font-family-tertiary;
@@ -23,4 +23,15 @@
         left: toRem(-6px);
         right: toRem(-6px);
     }
+}
+
+.navLink {
+    font-family: $font-family-secondary;
+    font-size: toRem(18px);
+    line-height: toRem(32px);
+    color: $color-black;
+    width: fit-content;
+
+    @include button-hover-underline($color-black);
+    @include button-focus-underline($color-black);
 }

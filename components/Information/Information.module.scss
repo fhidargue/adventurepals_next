@@ -1,11 +1,13 @@
 @import "../../styles/main.scss";
 
 .container {
-    padding: toRem(120px) toRem(32px);
+    padding: toRem(120px) toRem(32px) toRem(160px);
+    max-height: toRem(960px);
     background-color: $color-seashell;
 
     @media #{$breakpoint-tablet} {
         padding: toRem(80px) toRem(32px);
+        max-height: none;
     }
 }
 

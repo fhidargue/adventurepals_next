@@ -7,6 +7,7 @@ $color-yellow: #f6d765;
 $color-yellow2: #f6c410;
 $color-white: #ffffff;
 $color-floral: #fcf7f4;
+$color-anti-flash: #f3f4f4;
 $color-flash-blue: #eaf3f8;
 $color-flash-green: #f0f8f3;
 $color-grey: #f4f4f4;
@@ -31,9 +32,9 @@ $color-background: #2f3366;
 $size-max-container: 1280px;
 
 // Fonts
-$font-family-primary: 'Poppins', sans-serif;
-$font-family-secondary: 'Manrope', sans-serif;
-$font-family-tertiary: 'Catamaran', sans-serif;
+$font-family-primary: "Poppins", sans-serif;
+$font-family-secondary: "Manrope", sans-serif;
+$font-family-tertiary: "Catamaran", sans-serif;
 $font-size-base: 16px;
 
 // Breakpoints
@@ -46,20 +47,20 @@ $tablet-max: ($desktop-min - 1);
 $desktop-lg: 1290px;
 $desktop-xl: 1920px;
 
-$small-height-devices: 'screen and (max-height: 568px) and (max-width: #{$mobile-max})';
-$breakpoint-mobile: 'screen and (max-width: #{$mobile-max})';
-$breakpoint-mobile-xs: 'screen and (max-width: #{$mobile-xs})';
-$breakpoint-mobile-lg: 'screen and (max-width: #{$mobile-lg})';
-$breakpoint-tablet: 'screen and (max-width: #{$tablet-max})';
-$breakpoint-tablet-and-desktop: 'screen and (min-width: #{$tablet-min})';
-$breakpoint-desktop: 'screen and (min-width: #{$desktop-min})';
-$breakpoint-desktop-sm-only: 'screen and (min-width: #{$desktop-min}) and (max-width: #{$desktop-lg})';
-$breakpoint-tablet-only: 'screen and (min-width: #{$tablet-min}) and (max-width: #{$tablet-max})';
-$breakpoint-desktop-lg: 'screen and (min-width: #{$desktop-lg})';
-$breakpoint-desktop-lg-only: 'screen and (max-width: #{$desktop-lg})';
-$breakpoint-desktop-xl: 'screen and (min-width: #{$desktop-xl})';
-$breakpoint-2x: 'screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 320dpi)';
-$breakpoint-3x: 'screen and (-webkit-min-device-pixel-ratio: 3), (min-resolution: 480dpi)';
-$breakpoint-ie: 'all and (-ms-high-contrast: none), (-ms-high-contrast: active)';
-$breakpoint-ie-mobile: 'all and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: #{$mobile-max})';
-$bp-mobile-lg-to-tablet: 'screen and (min-width: #{$mobile-lg}) and (max-width: #{$tablet-min})';
+$small-height-devices: "screen and (max-height: 568px) and (max-width: #{$mobile-max})";
+$breakpoint-mobile: "screen and (max-width: #{$mobile-max})";
+$breakpoint-mobile-xs: "screen and (max-width: #{$mobile-xs})";
+$breakpoint-mobile-lg: "screen and (max-width: #{$mobile-lg})";
+$breakpoint-tablet: "screen and (max-width: #{$tablet-max})";
+$breakpoint-tablet-and-desktop: "screen and (min-width: #{$tablet-min})";
+$breakpoint-desktop: "screen and (min-width: #{$desktop-min})";
+$breakpoint-desktop-sm-only: "screen and (min-width: #{$desktop-min}) and (max-width: #{$desktop-lg})";
+$breakpoint-tablet-only: "screen and (min-width: #{$tablet-min}) and (max-width: #{$tablet-max})";
+$breakpoint-desktop-lg: "screen and (min-width: #{$desktop-lg})";
+$breakpoint-desktop-lg-only: "screen and (max-width: #{$desktop-lg})";
+$breakpoint-desktop-xl: "screen and (min-width: #{$desktop-xl})";
+$breakpoint-2x: "screen and (-webkit-min-device-pixel-ratio: 2), (min-resolution: 320dpi)";
+$breakpoint-3x: "screen and (-webkit-min-device-pixel-ratio: 3), (min-resolution: 480dpi)";
+$breakpoint-ie: "all and (-ms-high-contrast: none), (-ms-high-contrast: active)";
+$breakpoint-ie-mobile: "all and (-ms-high-contrast: active), (-ms-high-contrast: none) and (max-width: #{$mobile-max})";
+$bp-mobile-lg-to-tablet: "screen and (min-width: #{$mobile-lg}) and (max-width: #{$tablet-min})";

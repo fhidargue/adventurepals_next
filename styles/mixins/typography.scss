@@ -311,3 +311,9 @@
         }
     }
 }
+
+@mixin footer-nav-title() {
+    font-size: toRem(28px);
+    line-height: toRem(30px);
+    font-weight: 600;
+}
