@@ -3,7 +3,7 @@
         outline: none;
 
         &::after {
-            content: '';
+            content: "";
             position: absolute;
             top: toRem(-2px);
             bottom: toRem(-2px);
@@ -29,7 +29,7 @@
         outline: none;
 
         &::after {
-            content: '';
+            content: "";
             position: absolute;
             top: toRem(-2px);
             bottom: toRem(-2px);
@@ -39,6 +39,42 @@
             background-color: transparent;
             border-radius: toRem(5px);
             pointer-events: none;
+            z-index: 2;
+        }
+    }
+}
+
+@mixin button-hover-underline($color) {
+    &:hover {
+        outline: none;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: toRem(-4px);
+            left: 0;
+            border: toRem(1px) solid $color;
+            background-color: transparent;
+            pointer-events: none;
+            width: 100%;
+            z-index: 2;
+        }
+    }
+}
+
+@mixin button-focus-underline($color) {
+    &:focus {
+        outline: none;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: toRem(-4px);
+            left: 0;
+            border: toRem(1px) solid $color;
+            background-color: transparent;
+            pointer-events: none;
+            width: 100%;
             z-index: 2;
         }
     }

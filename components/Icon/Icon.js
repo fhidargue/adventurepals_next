@@ -1,5 +1,6 @@
-import PropTypes from 'prop-types';
-import styles from './Icon.module.scss';
+import PropTypes from "prop-types";
+import styles from "./Icon.module.scss";
+// import SvgMap from "../../resources/icons";
 
 const Icon = (props) => {
     const {
@@ -16,7 +17,7 @@ const Icon = (props) => {
         imageDecorative,
     } = props;
 
-    const Tag = isLink ? 'a' : onClick ? 'button' : 'div';
+    const Tag = isLink ? "a" : onClick ? "button" : "div";
 
     return (
         <Tag
@@ -24,23 +25,24 @@ const Icon = (props) => {
             href={url ? url : null}
             onClick={onClick}
             target={target ? target : null}
+            tabIndex="-1"
         >
             <object
                 type="image/svg+xml"
                 data={`/icons/${name}.svg`}
                 style={{ ...style }}
                 className={`${styles.svg} ${size && styles[size]}`}
-                alt={imageDecorative ? '' : alt}
+                alt={imageDecorative ? "" : alt}
                 aria-hidden="true"
                 focusable="false"
             />
-            {imageDecorative ? '' : <span className="sr-only">{alt}</span>}
+            {imageDecorative ? "" : <span className="sr-only">{alt}</span>}
         </Tag>
     );
 };
 
 Icon.propTypes = {
-    name: PropTypes.string,
+    name: PropTypes.string.isRequired,
     alt: PropTypes.string,
     size: PropTypes.string,
     onClick: PropTypes.func,

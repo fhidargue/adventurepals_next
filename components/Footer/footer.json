@@ -1,0 +1,112 @@
+{
+    "logo": {
+        "image": "/images/logos/mainlogo2.png",
+        "imageAlt": "Adventure Pals logo",
+        "url": "/",
+        "target": "_self"
+    },
+    "socialMedia": [
+        {
+            "icon": "twitter",
+            "alt": "Twitter link button",
+            "url": "twitter.com",
+            "target": "_blank"
+        },
+        {
+            "icon": "facebook",
+            "alt": "Facebook link button",
+            "url": "facebook.com",
+            "target": "_blank"
+        },
+        {
+            "icon": "instagram",
+            "alt": "Instagram link button",
+            "url": "instagram.com",
+            "target": "_blank"
+        }
+    ],
+    "line": {
+        "image": "/figures/footer-line.png"
+    },
+    "contact": {
+        "title": "Agency Address",
+        "address": ["Aorth street, Office 140", "Berlin, City mall 142"],
+        "phone": "(+88)0 45 45 661",
+        "email": "support24@gmail.com"
+    },
+    "columns": [
+        {
+            "title": "Links",
+            "links": [
+                {
+                    "text": "About us",
+                    "url": "/",
+                    "target": "_self"
+                },
+                {
+                    "text": "Meet our team",
+                    "url": "/",
+                    "target": "_self"
+                },
+                {
+                    "text": "Case stories",
+                    "url": "/",
+                    "target": "_self"
+                },
+                {
+                    "text": "Latest news",
+                    "url": "/",
+                    "target": "_self"
+                },
+                {
+                    "text": "Contact",
+                    "url": "/",
+                    "target": "_self"
+                }
+            ]
+        },
+        {
+            "title": "Other Links",
+            "links": [
+                {
+                    "text": "Careers",
+                    "url": "/",
+                    "target": "_self"
+                },
+                {
+                    "text": "Creative Agency",
+                    "url": "/",
+                    "target": "_self"
+                },
+                {
+                    "text": "Digital Agency",
+                    "url": "/",
+                    "target": "_self"
+                },
+                {
+                    "text": "Marketing",
+                    "url": "/",
+                    "target": "_self"
+                },
+                {
+                    "text": "Digital service",
+                    "url": "/",
+                    "target": "_self"
+                }
+            ]
+        }
+    ],
+    "copyRight": "All rights reserved 2022@",
+    "bottomLinks": [
+        {
+            "text": "Terms of use",
+            "url": "/",
+            "target": "_self"
+        },
+        {
+            "text": "Privacy policy",
+            "url": "/",
+            "target": "_self"
+        }
+    ]
+}

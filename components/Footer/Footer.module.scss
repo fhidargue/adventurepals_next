@@ -1,0 +1,165 @@
+@import "../../styles/main.scss";
+
+.footer {
+    max-width: toRem(1234px);
+    margin: 0 auto;
+    padding: toRem(90px) toRem(32px) toRem(50px);
+
+    @media #{$breakpoint-mobile} {
+        padding: toRem(70px) toRem(32px) toRem(50px);
+    }
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: toRem(45px);
+    border-bottom: toRem(1px) solid $color-platinum;
+
+    @media #{$breakpoint-tablet} {
+        flex-direction: column;
+        gap: toRem(32px);
+    }
+}
+
+.topLeft {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+
+    @media #{$breakpoint-tablet} {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    @media #{$breakpoint-mobile} {
+        flex-direction: column;
+        align-items: center;
+        gap: toRem(48px);
+    }
+}
+
+.topRight {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    gap: toRem(114px);
+
+    @media (max-width: 1160px) {
+        gap: toRem(80px);
+    }
+
+    @media #{$breakpoint-tablet} {
+        width: 100%;
+        justify-content: space-evenly;
+        gap: 0;
+
+        & nav:first-child {
+            min-width: toRem(180px);
+
+            @media #{$breakpoint-mobile} {
+                min-width: 0;
+            }
+        }
+
+        & nav:last-child {
+            min-width: toRem(232px);
+
+            @media #{$breakpoint-mobile} {
+                min-width: 0;
+            }
+        }
+    }
+
+    @media #{$breakpoint-mobile} {
+        justify-content: space-around;
+    }
+}
+
+.bottom {
+    padding-top: toRem(45px);
+    display: flex;
+    justify-content: space-between;
+
+    @media #{$breakpoint-mobile} {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: toRem(24px);
+    }
+}
+
+.bottomLinks {
+    display: flex;
+    gap: toRem(24px);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+
+    @media #{$breakpoint-mobile} {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.logo {
+    margin-bottom: toRem(20px);
+}
+
+.contact {
+    width: fit-content;
+}
+
+.contactInfo {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.line {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: toRem(12px);
+
+    & div:first-child {
+        margin-right: toRem(12px);
+    }
+}
+
+.addressLines {
+    display: flex;
+    flex-direction: column;
+}
+
+.address {
+    font-size: toRem(18px);
+    line-height: toRem(32px);
+    font-weight: 400;
+}
+
+.title {
+    @include footer-nav-title();
+    margin-bottom: toRem(32px);
+}
+
+.columns {
+    & p {
+        margin-bottom: toRem(26px);
+    }
+}
+
+.linkList {
+    & li:not(:last-child) {
+        margin-bottom: toRem(8px);
+    }
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(8px);
+}

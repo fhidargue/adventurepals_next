@@ -1,0 +1,50 @@
+@import "../../styles/main.scss";
+
+.socialMedia {
+    display: flex;
+    margin-bottom: toRem(52px);
+
+    & li:not(:last-child) {
+        margin-right: toRem(18px);
+    }
+
+    @media #{$breakpoint-mobile} {
+        margin-bottom: toRem(32px);
+    }
+}
+
+.button {
+    &:hover {
+        color: $color-white;
+    }
+}
+
+.iconButton {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.facebook::after {
+    position: absolute;
+    content: url("/icons/facebook.svg");
+    top: 17%;
+    height: toRem(30px);
+}
+
+.twitter::after {
+    position: absolute;
+    content: url("/icons/twitter.svg");
+    top: 17%;
+    height: toRem(30px);
+}
+
+.instagram::after {
+    position: absolute;
+    content: url("/icons/instagram.svg");
+    top: 17%;
+    height: toRem(30px);
+}

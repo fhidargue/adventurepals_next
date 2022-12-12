@@ -124,6 +124,39 @@
     }
 }
 
+.logo {
+    padding: 0;
+    width: fit-content;
+}
+
+.socialMedia {
+    padding: 0;
+    width: toRem(48px);
+    height: toRem(48px);
+    background-color: $color-anti-flash;
+    border-radius: 50%;
+
+    @include button-hover($color-black);
+    @include button-focus($color-black);
+
+    &:hover {
+        background-color: $color-black;
+
+        & > div::after {
+            filter: invert(1);
+            color: $color-white;
+        }
+    }
+
+    &:focus::after {
+        border-radius: 50%;
+        top: toRem(-4px);
+        bottom: toRem(-4px);
+        left: toRem(-4px);
+        right: toRem(-4px);
+    }
+}
+
 .white {
     color: $color-white;
 }

@@ -21,3 +21,5 @@ export { default as Accordion } from "./Accordion";
 export { default as TeamMembers } from "./TeamMembers";
 export { default as MemberCard } from "./MemberCard";
 export { default as ContactBanner } from "./ContactBanner";
+export { default as Footer } from "./Footer";
+export { default as SocialMedia } from "./SocialMedia";

@@ -1,5 +1,12 @@
+import Footer from "../Footer";
+
 const Layout = ({ children }) => {
-    return <div>{children}</div>;
+    return (
+        <>
+            <main>{children}</main>
+            <Footer />
+        </>
+    );
 };
 
 export default Layout;
