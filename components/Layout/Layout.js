@@ -1,8 +1,9 @@
-import Footer from "../Footer";
+import { Header, Footer } from "../../components";
 
 const Layout = ({ children }) => {
     return (
         <>
+            <Header />
             <main>{children}</main>
             <Footer />
         </>

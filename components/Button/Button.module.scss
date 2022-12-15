@@ -129,6 +129,13 @@
     width: fit-content;
 }
 
+.logoHeader {
+    padding: 0;
+    width: fit-content;
+
+    @include button-focus($color-yellow2);
+}
+
 .socialMedia {
     padding: 0;
     width: toRem(48px);
@@ -153,6 +160,24 @@
         bottom: toRem(-4px);
         left: toRem(-4px);
         right: toRem(-4px);
+    }
+}
+
+.heading {
+    background-color: $color-yellow2;
+    color: $color-black;
+    border-radius: toRem(35px);
+    padding: toRem(5px) toRem(40px);
+
+    & span {
+        font-weight: 600;
+    }
+
+    @include button-hover($color-yellow-hover);
+    @include button-focus($color-black);
+
+    &:focus::after {
+        border-radius: toRem(35px);
     }
 }
 

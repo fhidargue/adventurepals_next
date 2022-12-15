@@ -1,0 +1,38 @@
+{
+    "logo": {
+        "image": "/images/logos/main-logo.png",
+        "imageAlt": "Adventure Pals header logo",
+        "url": "/",
+        "target": "_self"
+    },
+    "links": [
+        {
+            "text": "Walt Disney World",
+            "url": "/",
+            "target": "_self"
+        },
+        {
+            "text": "Disneyland",
+            "url": "/",
+            "target": "_self"
+        },
+        {
+            "text": "Universal",
+            "url": "/",
+            "target": "_self"
+        },
+        {
+            "text": "... and Beyond!",
+            "url": "/",
+            "target": "_self"
+        }
+    ],
+    "contact": {
+        "text": "Contact Us",
+        "type": "heading",
+        "url": "/",
+        "target": "_self",
+        "icon": "phone-white",
+        "phone": "(88) 4826 48 01"
+    }
+}

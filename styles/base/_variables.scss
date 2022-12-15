@@ -5,6 +5,7 @@ $color-blue: #1f78ff;
 $color-blue-hover: #1856b4;
 $color-yellow: #f6d765;
 $color-yellow2: #f6c410;
+$color-yellow-hover: #e3b50f;
 $color-white: #ffffff;
 $color-floral: #fcf7f4;
 $color-anti-flash: #f3f4f4;
@@ -44,7 +45,7 @@ $tablet-min: 768px;
 $desktop-min: 1024px;
 $mobile-max: ($tablet-min - 1);
 $tablet-max: ($desktop-min - 1);
-$desktop-lg: 1290px;
+$desktop-lg: 1305px;
 $desktop-xl: 1920px;
 
 $small-height-devices: "screen and (max-height: 568px) and (max-width: #{$mobile-max})";

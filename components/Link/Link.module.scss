@@ -35,3 +35,46 @@
     @include button-hover-underline($color-black);
     @include button-focus-underline($color-black);
 }
+
+.navHeader {
+    background-image: linear-gradient(
+        to right,
+        $color-yellow2,
+        $color-yellow2 50%,
+        #fff 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    position: relative;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+
+    &:before {
+        content: "";
+        background: $color-yellow2;
+        display: block;
+        position: absolute;
+        bottom: toRem(15px);
+        left: 0;
+        width: 0;
+        height: toRem(3px);
+        transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+        background-position: 0;
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
+
+    @include button-focus-underline($color-yellow2);
+
+    &:focus::after {
+        bottom: toRem(15px);
+    }
+}

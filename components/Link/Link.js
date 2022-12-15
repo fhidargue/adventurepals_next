@@ -1,5 +1,5 @@
-import styles from './Link.module.scss';
-import PropTypes from 'prop-types';
+import styles from "./Link.module.scss";
+import PropTypes from "prop-types";
 
 const Link = (props) => {
     const { text, url, target, type, className } = props;
@@ -10,7 +10,7 @@ const Link = (props) => {
             className={`${styles.link} ${styles[type]} ${className}`}
             target={target}
         >
-            {text}
+            <span>{text}</span>
         </a>
     );
 };
@@ -24,10 +24,10 @@ Link.propTypes = {
 };
 
 Link.defaultProps = {
-    text: 'Link text',
-    url: '#',
-    target: '_self',
-    type: 'primary',
+    text: "Link text",
+    url: "#",
+    target: "_self",
+    type: "primary",
 };
 
 export default Link;

@@ -1,0 +1,105 @@
+@import "../../../styles/main.scss";
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: toRem(16px) toRem(48px);
+    width: 100%;
+    z-index: 4;
+
+    @media #{$breakpoint-tablet} {
+        display: none;
+    }
+}
+
+.overlayBack {
+    background-color: rgba(255, 255, 255, 8%);
+    transition: all 0.3s ease-in-out;
+}
+
+.filledBack {
+    background-color: $color-white;
+    transition: all 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 toRem(1px) toRem(2px) 0;
+}
+
+.leftContainer {
+    display: flex;
+    align-items: center;
+    gap: toRem(200px);
+
+    @media (max-width: #{$desktop-lg}) {
+        gap: toRem(50px);
+    }
+}
+
+.rightContainer {
+    display: flex;
+    align-items: center;
+    gap: toRem(24px);
+
+    & div:first-of-type {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: #{$desktop-lg}) {
+            display: none;
+        }
+    }
+}
+
+.links {
+    display: flex;
+    gap: toRem(24px);
+    max-height: toRem(40px);
+}
+
+.link {
+    display: flex;
+    align-items: center;
+
+    & a {
+        color: red;
+    }
+}
+
+.phoneBack {
+    background-color: $color-blue;
+    width: fit-content;
+    border-radius: toRem(12px);
+    margin-right: toRem(16px);
+}
+
+.icon {
+    width: toRem(44px);
+    height: toRem(44px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.white {
+    color: $color-white;
+}
+
+.linkWhite {
+    background-image: linear-gradient(
+        to right,
+        $color-yellow2,
+        $color-yellow2 50%,
+        $color-white 50%
+    );
+}
+
+.black {
+    color: $color-black;
+}
+
+.linkBlack {
+    background-image: linear-gradient(
+        to right,
+        $color-yellow2,
+        $color-yellow2 50%,
+        $color-black 50%
+    );
+}
