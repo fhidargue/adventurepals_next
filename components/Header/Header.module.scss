@@ -1,4 +1,4 @@
-@import "../../../styles/main.scss";
+@import "../../styles/main.scss";
 
 .header {
     display: flex;
@@ -8,6 +8,19 @@
     z-index: 4;
 
     @media #{$breakpoint-tablet} {
+        display: none;
+    }
+}
+
+.mobileHheader {
+    display: flex;
+    justify-content: space-between;
+    padding: toRem(16px);
+    width: 100%;
+    z-index: 4;
+    position: relative;
+
+    @media #{$breakpoint-desktop} {
         display: none;
     }
 }
@@ -57,10 +70,6 @@
 .link {
     display: flex;
     align-items: center;
-
-    & a {
-        color: red;
-    }
 }
 
 .phoneBack {
@@ -102,4 +111,93 @@
         $color-yellow2 50%,
         $color-black 50%
     );
+}
+
+.hamburger {
+    background: transparent;
+    margin: toRem(16px) auto;
+    position: relative;
+    height: toRem(30px);
+    width: toRem(50px);
+    border: none;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+        background: #fff;
+        backface-visibility: hidden;
+        content: "";
+        height: toRem(2px);
+        left: 0;
+        transition: 0.75s;
+        width: toRem(40px);
+    }
+
+    &:before {
+        box-shadow: #fff 0 toRem(14px) 0 0;
+        position: absolute;
+        top: 0;
+    }
+
+    &:after {
+        position: absolute;
+        top: calc(100% - toRem(2px));
+    }
+}
+
+.hamburgerWhite {
+    &:before,
+    &:after {
+        background: $color-white;
+    }
+
+    &:before {
+        box-shadow: $color-white 0 14px 0 0;
+    }
+}
+
+.hamburgerBlack {
+    &:before,
+    &:after {
+        background: $color-black;
+    }
+
+    &:before {
+        box-shadow: $color-black 0 14px 0 0;
+    }
+}
+
+.open {
+    &:before {
+        box-shadow: transparent 0 0 0 0;
+        top: 50%;
+        transform: rotate(225deg);
+    }
+
+    &:after {
+        top: 50%;
+        transform: rotate(315deg);
+    }
+}
+
+.mobileMenu {
+    display: contents;
+}
+
+.menu {
+    position: fixed;
+    top: toRem(96px);
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.5s ease-in-out;
+}
+
+.menuOpen {
+    right: 0;
+    background-color: $color-background;
+}
+
+.menuClosed {
+    right: -100%;
 }
