@@ -4,7 +4,6 @@
     max-width: toRem(1234px);
     margin: 0 auto;
     padding: toRem(90px) toRem(32px) toRem(50px);
-    position: relative;
 
     @media #{$breakpoint-mobile} {
         padding: toRem(70px) toRem(32px) toRem(50px);
