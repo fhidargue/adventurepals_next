@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import styles from "./Icon.module.scss";
-// import SvgMap from "../../resources/icons";
 
 const Icon = (props) => {
     const {
@@ -25,7 +24,7 @@ const Icon = (props) => {
             href={url ? url : null}
             onClick={onClick}
             target={target ? target : null}
-            tabIndex="-1"
+            tabIndex={imageDecorative ? -1 : 0}
         >
             <object
                 type="image/svg+xml"
@@ -35,6 +34,7 @@ const Icon = (props) => {
                 alt={imageDecorative ? "" : alt}
                 aria-hidden="true"
                 focusable="false"
+                tabIndex={-1}
             />
             {imageDecorative ? "" : <span className="sr-only">{alt}</span>}
         </Tag>

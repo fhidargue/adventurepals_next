@@ -2,7 +2,7 @@ import data from "./header.json";
 import styles from "./Header.module.scss";
 import Image from "next/image";
 import { useState } from "react";
-import { Button, Link, Icon } from "../../components";
+import { Button, Link, Icon, Text } from "../../components";
 
 const Header = () => {
     const [fixed, setFixed] = useState(false);
@@ -47,17 +47,41 @@ const Header = () => {
                         />
                     </Button>
                 </div>
-                <div>
-                    <button
-                        className={`${styles.hamburger} ${
+                <div
+                    className={`${styles.hamburgerWrapper} ${
+                        mobileOpen && styles.open
+                    }`}
+                    onClick={() => {
+                        setMobileOpen(!mobileOpen);
+                        document.activeElement.blur();
+                    }}
+                    tabIndex={0}
+                >
+                    <div
+                        className={`${styles.line} ${styles.half} ${
+                            styles.start
+                        } ${
                             fixed
                                 ? styles.hamburgerBlack
                                 : styles.hamburgerWhite
-                        } ${mobileOpen && styles.open}`}
-                        onClick={() => {
-                            setMobileOpen(!mobileOpen);
-                        }}
-                    ></button>
+                        }`}
+                    ></div>
+                    <div
+                        className={`${styles.line} ${
+                            fixed
+                                ? styles.hamburgerBlack
+                                : styles.hamburgerWhite
+                        }`}
+                    ></div>
+                    <div
+                        className={`${styles.line} ${styles.half} ${
+                            styles.end
+                        } ${
+                            fixed
+                                ? styles.hamburgerBlack
+                                : styles.hamburgerWhite
+                        }`}
+                    ></div>
                 </div>
                 <div className={styles.mobileMenu}>
                     <div
@@ -70,26 +94,30 @@ const Header = () => {
                                 return (
                                     <li
                                         key={index}
-                                        className={styles.link}
-                                        style={{
-                                            display: "flex",
-                                            flexDirection: "column",
-                                        }}
+                                        className={`${styles.mobileLink} ${styles.borderBottom}`}
                                     >
-                                        <Link
-                                            className={styles.linkWhite}
-                                            text={item.text}
+                                        <Button
+                                            tag="a"
                                             url={item.url}
-                                            target={item.target}
-                                            type="navHeader"
-                                        />
-                                        {item.innerLinks.map((inner, index) => {
-                                            return <span>{inner.text}</span>;
-                                        })}
+                                            linkTarget={item.target}
+                                            type="mobileNav"
+                                            tabIndex={mobileOpen ? 0 : -1}
+                                        >
+                                            <Text
+                                                text={item.text}
+                                                size="main-copy"
+                                                color="white"
+                                            />
+                                            <Icon
+                                                name="chevron-right"
+                                                size="lg"
+                                                imageDecorative
+                                            />
+                                        </Button>
                                     </li>
                                 );
                             })}
-                            <li>
+                            <li className={styles.mobileLink}>
                                 <Button
                                     tag="button"
                                     buttonType="button"
@@ -98,6 +126,7 @@ const Header = () => {
                                     type="secondary"
                                     linkTarget={data.contact.target}
                                     url={data.contact.url}
+                                    tabIndex={mobileOpen ? 0 : -1}
                                 />
                             </li>
                         </ul>
@@ -156,6 +185,7 @@ const Header = () => {
                                 alt=""
                                 size="lg"
                                 className={styles.icon}
+                                imageDecorative
                             />
                         </div>
                         <Link

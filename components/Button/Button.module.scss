@@ -33,6 +33,10 @@
 .secondary {
     background-color: $color-yellow2;
     color: $color-black;
+    font-weight: 800;
+
+    @include button-hover($color-yellow-hover);
+    @include button-focus($color-black);
 }
 
 .tertiary {
@@ -124,6 +128,30 @@
     }
 }
 
+.iconTop {
+    position: fixed;
+    bottom: toRem(16px);
+    right: toRem(32px);
+    z-index: 5;
+    rotate: -90deg;
+    background-color: $color-yellow2;
+    padding: toRem(16px);
+    border-radius: 50%;
+    -webkit-tap-highlight-color: transparent;
+
+    & div {
+        width: toRem(32px);
+        height: toRem(32px);
+    }
+
+    @include button-hover($color-yellow-hover);
+    @include button-focus($color-black);
+
+    &:focus::after {
+        border-radius: 50%;
+    }
+}
+
 .logo {
     padding: 0;
     width: fit-content;
@@ -178,6 +206,25 @@
 
     &:focus::after {
         border-radius: toRem(35px);
+    }
+}
+
+.mobileNav {
+    background-color: transparent;
+    padding: 0;
+    text-decoration: none;
+    width: 100%;
+
+    @include button-focus($color-white);
+
+    & div {
+        width: toRem(32px);
+        height: toRem(32px);
+    }
+
+    @media #{$breakpoint-tablet} {
+        max-width: none;
+        justify-content: space-between;
     }
 }
 

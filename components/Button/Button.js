@@ -26,6 +26,7 @@ const Button = (props) => {
         onFocus,
         onBlur,
         children,
+        style,
         className,
     } = props;
 
@@ -50,6 +51,7 @@ const Button = (props) => {
             onFocus={onFocus}
             onBlur={onBlur}
             onKeyDown={onKeyDown}
+            style={style}
         >
             {text && !children ? <span>{text}</span> : children}
         </Tag>
@@ -87,6 +89,7 @@ Button.propTypes = {
         PropTypes.arrayOf(PropTypes.node),
         PropTypes.node,
     ]),
+    style: PropTypes.object,
 };
 
 Button.defaultProps = {

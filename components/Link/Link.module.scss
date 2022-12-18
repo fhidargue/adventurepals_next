@@ -41,8 +41,9 @@
         to right,
         $color-yellow2,
         $color-yellow2 50%,
-        #fff 50%
+        $color-white 50%
     );
+    font-weight: 800;
     background-size: 200% 100%;
     background-position: -100%;
     display: inline-block;

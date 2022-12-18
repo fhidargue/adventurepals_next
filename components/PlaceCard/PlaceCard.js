@@ -34,6 +34,7 @@ const PlaceCard = (props) => {
                         name="arrow-right-white"
                         aria-label="arrow right"
                         size="lg"
+                        imageDecorative
                     />
                 </Button>
             </div>

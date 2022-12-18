@@ -6,6 +6,40 @@ import { Button, SocialMedia, Text, Link, Icon } from "../../components";
 const Footer = () => {
     return (
         <footer className={styles.footer}>
+            <div className={styles.layer}>
+                <Image
+                    src="/figures/yellow-curve.png"
+                    alt="yellow curve"
+                    width={18}
+                    height={20}
+                    className={styles.yellowCurve}
+                    tabIndex={-1}
+                />
+                <Image
+                    src="/figures/black-circle.png"
+                    alt="round line"
+                    width={13}
+                    height={10}
+                    className={styles.blackCircle}
+                    tabIndex={-1}
+                />
+                <Image
+                    src="/figures/two-lines.png"
+                    alt="stroke line"
+                    width={26}
+                    height={38}
+                    className={styles.twoLines}
+                    tabIndex={-1}
+                />
+                <Image
+                    src="/figures/yellow-circle.png"
+                    alt="yellow circle"
+                    width={18}
+                    height={18}
+                    className={styles.yellowCircle}
+                    tabIndex={-1}
+                />
+            </div>
             <div className={styles.top}>
                 <div className={styles.topLeft}>
                     <div className={styles.info}>
