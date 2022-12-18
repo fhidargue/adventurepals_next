@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
-import styles from './ProfessionCard.module.scss';
-import { Icon } from '../../components';
+import PropTypes from "prop-types";
+import styles from "./ProfessionCard.module.scss";
+import { Icon } from "../../components";
 
 const ProfessionCard = (props) => {
     const { icon, profession } = props;
@@ -8,7 +8,13 @@ const ProfessionCard = (props) => {
     return (
         <div className={styles.card}>
             <div className={styles.iconContainer}>
-                <Icon name={icon} alt="icon image" inline size="lg" />
+                <Icon
+                    name={icon}
+                    alt="icon image"
+                    inline
+                    size="lg"
+                    imageDecorative
+                />
             </div>
             <div className={styles.textContainer}>
                 <span className={styles.profession}>{profession}</span>

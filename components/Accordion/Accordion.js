@@ -97,19 +97,21 @@ const Accordion = (props) => {
                                             className={styles.headingIcon}
                                             name="minus"
                                             size="sm"
+                                            imageDecorative
                                         />
                                     ) : (
                                         <Icon
                                             className={styles.headingIcon}
                                             name="plus"
                                             size="sm"
+                                            imageDecorative
                                         />
                                     )}
                                 </Button>
                                 <div
                                     role="region"
                                     id={`accordion-panel-${i}`}
-                                    aria-labelledby={`accordion-heading-${i}`}
+                                    aria-label={`accordion-heading-${i + 1}`}
                                     aria-hidden={!openSections[i]}
                                     className={`${styles.content} ${
                                         openSections[i] && styles.contentOpen

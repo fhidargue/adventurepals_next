@@ -1,6 +1,7 @@
 export { default as Layout } from "./Layout";
 export { default as HomepageHero } from "./HomepageHero";
 export { default as Button } from "./Button";
+export { default as ButtonTop } from "./ButtonTop";
 export { default as Label } from "./Label";
 export { default as Title } from "./Title";
 export { default as AboutUs } from "./AboutUs";
@@ -22,4 +23,5 @@ export { default as TeamMembers } from "./TeamMembers";
 export { default as MemberCard } from "./MemberCard";
 export { default as ContactBanner } from "./ContactBanner";
 export { default as Footer } from "./Footer";
+export { default as Header } from "./Header";
 export { default as SocialMedia } from "./SocialMedia";

@@ -1,0 +1,131 @@
+{
+    "logo": {
+        "image": "/images/logos/main-logo.png",
+        "imageAlt": "Adventure Pals header logo",
+        "url": "/",
+        "target": "_self"
+    },
+    "links": [
+        {
+            "text": "Walt Disney World",
+            "url": "/",
+            "target": "_self",
+            "innerLinks": [
+                {
+                    "text": "Theme Parks",
+                    "url": "/",
+                    "target": "_self"
+                },
+                {
+                    "text": "Water Parks",
+                    "url": "/",
+                    "target": "_self"
+                },
+                {
+                    "text": "Hotels",
+                    "url": "/",
+                    "target": "_self"
+                },
+                {
+                    "text": "Park Tickets",
+                    "url": "/",
+                    "target": "_self"
+                }
+            ]
+        },
+        {
+            "text": "Disneyland",
+            "url": "/",
+            "target": "_self",
+            "innerLinks": [
+                {
+                    "text": "Theme Parks",
+                    "url": "/",
+                    "target": "_self"
+                },
+                {
+                    "text": "Hotels",
+                    "url": "/",
+                    "target": "_self"
+                },
+                {
+                    "text": "Park Tickets",
+                    "url": "/",
+                    "target": "_self"
+                }
+            ]
+        },
+        {
+            "text": "Universal",
+            "url": "/",
+            "target": "_self",
+            "innerLinks": [
+                {
+                    "text": "Theme Parks",
+                    "url": "/",
+                    "target": "_self"
+                },
+                {
+                    "text": "Water Parks",
+                    "url": "/",
+                    "target": "_self"
+                },
+                {
+                    "text": "Hotels",
+                    "url": "/",
+                    "target": "_self"
+                },
+                {
+                    "text": "Park Tickets",
+                    "url": "/",
+                    "target": "_self"
+                }
+            ]
+        },
+        {
+            "text": "... and Beyond!",
+            "url": "/",
+            "target": "_self",
+            "innerLinks": [
+                {
+                    "text": "Airplane Tickets",
+                    "url": "/",
+                    "target": "_self"
+                },
+                {
+                    "text": "Hotels",
+                    "url": "/",
+                    "target": "_self"
+                },
+                {
+                    "text": "Travel Assistance",
+                    "url": "/",
+                    "target": "_self"
+                },
+                {
+                    "text": "Car Rentals",
+                    "url": "/",
+                    "target": "_self"
+                },
+                {
+                    "text": "Travel Insurance",
+                    "url": "/",
+                    "target": "_self"
+                },
+                {
+                    "text": "Other Destinations",
+                    "url": "/",
+                    "target": "_self"
+                }
+            ]
+        }
+    ],
+    "contact": {
+        "text": "Contact Us",
+        "type": "heading",
+        "url": "/",
+        "target": "_self",
+        "icon": "phone-white",
+        "phone": "(88) 4826 48 01"
+    }
+}

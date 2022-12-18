@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@import "../../styles/main.scss";
 
 .card {
     max-width: toRem(264px);
@@ -13,6 +13,7 @@
 
     @media #{$breakpoint-mobile} {
         min-width: 0;
+        max-width: none;
         justify-content: center;
         gap: toRem(40px);
     }

@@ -1,6 +1,6 @@
-import styles from './ServiceCard.module.scss';
-import PropTypes from 'prop-types';
-import { Icon, Title, Text, Button } from '../../components';
+import styles from "./ServiceCard.module.scss";
+import PropTypes from "prop-types";
+import { Icon, Title, Text, Button } from "../../components";
 
 const ServiceCard = (props) => {
     const { service } = props;
@@ -18,6 +18,7 @@ const ServiceCard = (props) => {
                         alt="icon image"
                         inline
                         size="lg"
+                        imageDecorative
                     />
                 </div>
                 <Title
@@ -36,6 +37,7 @@ const ServiceCard = (props) => {
                                     alt="check icon"
                                     inline
                                     size="md"
+                                    imageDecorative
                                 />
                                 <Text text={feature} size="md" color="black" />
                             </li>

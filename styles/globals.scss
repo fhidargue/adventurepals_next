@@ -44,6 +44,10 @@ main {
     flex-grow: 1;
 }
 
+header {
+    position: relative;
+}
+
 svg {
     overflow: hidden;
     vertical-align: middle;

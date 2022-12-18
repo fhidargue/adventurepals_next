@@ -10,6 +10,77 @@
     }
 }
 
+.layer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.yellowCircle {
+    position: absolute;
+    top: toRem(300px);
+    right: toRem(-150px);
+
+    @media (max-width: 1500px) {
+        display: none;
+    }
+
+    @media #{$breakpoint-tablet} {
+        top: toRem(524px);
+        right: toRem(32px);
+        display: block;
+    }
+
+    @media #{$breakpoint-mobile} {
+        top: toRem(800px);
+    }
+}
+
+.twoLines {
+    position: absolute;
+    top: toRem(-36px);
+    right: toRem(-102px);
+
+    @media (max-width: 1400px) {
+        display: none;
+    }
+
+    @media #{$breakpoint-tablet} {
+        display: block;
+        right: toRem(80px);
+    }
+
+    @media #{$breakpoint-mobile} {
+        display: none;
+    }
+}
+
+.yellowCurve {
+    position: absolute;
+    top: toRem(12px);
+    left: toRem(-118px);
+
+    @media #{$breakpoint-mobile} {
+        top: toRem(76px);
+        left: toRem(48px);
+    }
+}
+
+.blackCircle {
+    position: absolute;
+    top: toRem(316px);
+    left: toRem(-54px);
+
+    @media #{$breakpoint-tablet} {
+        left: toRem(10px);
+    }
+
+    @media #{$breakpoint-mobile} {
+        top: toRem(460px);
+        left: toRem(48px);
+    }
+}
+
 .top {
     width: 100%;
     display: flex;
