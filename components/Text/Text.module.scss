@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@import "../../styles/main.scss";
 
 .text {
     @include type-main-copy();
@@ -24,4 +24,25 @@
 .lg {
     @include font-size(30px);
     line-height: toRem(40px);
+}
+
+.xl {
+    @include font-size(40px);
+    line-height: toRem(72px);
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.black {
+    color: $color-black;
+}
+
+.richBlack {
+    color: $color-rich-black;
+}
+
+.white {
+    color: $color-white;
 }

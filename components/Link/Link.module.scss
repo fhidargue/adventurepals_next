@@ -79,3 +79,14 @@
         bottom: toRem(15px);
     }
 }
+
+.subpage {
+    color: $color-white;
+    height: fit-content;
+    line-height: normal;
+    font-size: toRem(18px);
+    line-height: toRem(24px);
+
+    @include button-hover-underline($color-white);
+    @include button-focus-underline($color-white);
+}

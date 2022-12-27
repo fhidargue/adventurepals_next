@@ -1,0 +1,29 @@
+{
+    "backImage": "/images/components/up.png",
+    "homeLink": {
+        "text": "Home",
+        "url": "/",
+        "target": "_self"
+    },
+    "error": {
+        "text": "404"
+    },
+    "title": "404",
+    "errorMessage": "Opps! you’re on the wrong place.",
+    "errorSubmessage": "We Can’t Seem to Find the Page You are Looking for",
+    "homeButton": {
+        "text": "Back To Home",
+        "url": "/",
+        "target": "_self",
+        "type": "heading"
+    },
+    "newsletter": {
+        "title": "We believe in making the world a better experience",
+        "placeholder": "Your email address",
+        "button": {
+            "text": "SUBSCRIBE",
+            "type": "secondary"
+        },
+        "message": "Subsrcibe for our upcoming latest articles and resources"
+    }
+}
