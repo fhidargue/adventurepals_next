@@ -11,6 +11,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media #{$breakpoint-mobile} {
+        height: toRem(435px);
+    }
 }
 
 .layer {
