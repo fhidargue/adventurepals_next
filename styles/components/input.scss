@@ -1,0 +1,24 @@
+@mixin input-form {
+    @include type-input-form();
+
+    display: block;
+    padding-left: toRem(16px);
+    width: 100%;
+    height: toRem(60px);
+    border-radius: toRem(4px);
+    color: $color-black;
+
+    &:focus {
+        outline: none;
+        margin-left: 0;
+        box-shadow: 0 0 0 toRem(1px) $color-white, 0 0 0 toRem(3px) $color-grey3;
+    }
+
+    &:hover {
+        border: solid toRem(1px) $color-black;
+    }
+
+    &::-ms-clear {
+        display: none;
+    }
+}

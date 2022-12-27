@@ -9,8 +9,8 @@
         "text": "404"
     },
     "title": "404",
-    "errorMessage": "Opps! you’re on the wrong place.",
-    "errorSubmessage": "We Can’t Seem to Find the Page You are Looking for",
+    "errorMessage": "Opps! you’re in the wrong place.",
+    "errorSubmessage": "We can’t seem to find the page you are looking for",
     "homeButton": {
         "text": "Back To Home",
         "url": "/",
@@ -19,11 +19,14 @@
     },
     "newsletter": {
         "title": "We believe in making the world a better experience",
+        "altText": "Newsletter form",
         "placeholder": "Your email address",
         "button": {
-            "text": "SUBSCRIBE",
-            "type": "secondary"
+            "text": "SUBMIT"
         },
-        "message": "Subsrcibe for our upcoming latest articles and resources"
+        "message": "Subsrcibe for our upcoming latest articles and resources",
+        "successMessage": "Your email was sent successfully!",
+        "invalidEmailMessage": "Please enter a valid email address.",
+        "systemErrorMessage": "Something went wrong, please try again later."
     }
 }

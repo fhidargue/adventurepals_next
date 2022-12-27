@@ -1,3 +1,4 @@
+import { Newsletter } from "../components";
 import Errors from "../components/Errors/Errors";
 import SubpageHero from "../components/SubpageHero/SubpageHero";
 import data from "../resources/data/404.json";
@@ -18,6 +19,16 @@ const NotFound = () => {
                 errorMessage={data.errorMessage}
                 errorSubmessage={data.errorSubmessage}
                 button={data.homeButton}
+            />
+            <Newsletter
+                title={data.newsletter.title}
+                altText={data.newsletter.altText}
+                ctaText={data.newsletter.button.text}
+                successMessage={data.newsletter.successMessage}
+                invalidEmailMessage={data.newsletter.invalidEmailMessage}
+                systemErrorMessage={data.newsletter.systemErrorMessage}
+                placeholder={data.newsletter.placeholder}
+                message={data.newsletter.message}
             />
         </>
     );

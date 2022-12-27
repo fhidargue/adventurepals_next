@@ -128,14 +128,13 @@
 
 @mixin type-title() {
     @include type-body-base();
-    @include font-size(40px);
+    @include font-size(48px);
     font-weight: 700;
-    line-height: toRem(56px);
-    letter-spacing: -0.04em;
+    line-height: toRem(58px);
 
     @media #{$breakpoint-mobile} {
         @include font-size(36px);
-        line-height: toRem(36px);
+        line-height: toRem(48px);
     }
 }
 

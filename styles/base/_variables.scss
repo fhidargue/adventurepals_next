@@ -28,9 +28,17 @@ $color-cyan: #e2fffd;
 $color-almond: #fdeac8;
 $color-linen: #ffede2;
 $color-background: #2f3366;
+$color-red: #d42828;
+$color-newsletter: #f0f3f8;
+$color-input: #39425d;
 
 // Container size
 $size-max-container: 1280px;
+
+//Zindex
+$z-index-background-element: 101;
+$z-index-textarea-label: 200;
+$z-index-textarea-input: 100;
 
 // Fonts
 $font-family-primary: "Poppins", sans-serif;

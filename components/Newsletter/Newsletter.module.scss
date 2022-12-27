@@ -1,0 +1,69 @@
+@import "../../styles/main.scss";
+
+.container {
+    background-color: $color-newsletter;
+    padding: toRem(95px) toRem(32px);
+
+    @media #{$breakpoint-mobile} {
+        padding: toRem(70px) toRem(16px);
+    }
+}
+
+.wrapper {
+    max-width: toRem(786px);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.title {
+    @include type-title();
+}
+
+.submitButton {
+    max-width: toRem(219px);
+    max-height: toRem(64px);
+    border-radius: 0 toRem(4px) toRem(4px) 0;
+    font-size: toRem(16px);
+    line-height: toRem(50px);
+    font-weight: 500;
+    font-family: $font-family-primary;
+    border: none;
+    padding: toRem(10px) toRem(42px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: $color-yellow2;
+    color: $color-black;
+    font-weight: 800;
+
+    @include button-hover($color-yellow-hover);
+    @include button-focus($color-black);
+
+    @media #{$breakpoint-mobile} {
+        max-width: none;
+        width: 100%;
+        border-radius: toRem(4px);
+    }
+}
+
+.innerContainer {
+    display: flex;
+    justify-content: center;
+    margin: toRem(60px) 0 toRem(30px);
+
+    @media #{$breakpoint-mobile} {
+        flex-direction: column;
+        gap: toRem(16px);
+    }
+}
+
+.messageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: toRem(8px);
+    margin: toRem(60px) 0 toRem(30px);
+}

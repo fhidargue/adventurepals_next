@@ -27,3 +27,5 @@ export { default as Header } from "./Header";
 export { default as SocialMedia } from "./SocialMedia";
 export { default as SubpageHero } from "./SubpageHero";
 export { default as Errors } from "./Errors";
+export { default as Newsletter } from "./Newsletter";
+export { default as InputField } from "./InputField";
