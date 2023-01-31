@@ -152,6 +152,34 @@
     }
 }
 
+.playPause {
+    background-color: $color-yellow2;
+    padding: 0;
+    border-radius: 50%;
+    max-height: none;
+    -webkit-tap-highlight-color: transparent;
+
+    & div {
+        width: toRem(119px);
+        height: toRem(119px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @include button-hover($color-yellow-hover);
+    @include button-focus($color-black);
+
+    &:focus::after {
+        border-radius: 50%;
+    }
+
+    @media #{$breakpoint-mobile} {
+        width: toRem(64px);
+        height: toRem(64px);
+    }
+}
+
 .logo {
     padding: 0;
     width: fit-content;

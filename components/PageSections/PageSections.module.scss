@@ -1,0 +1,77 @@
+@import "../../styles/main.scss";
+
+.container {
+    width: 100%;
+    padding: toRem(100px) toRem(32px);
+    background-color: $color-white;
+}
+
+.wrapper {
+    max-width: toRem(1300px);
+    margin: auto;
+    border: solid $color-black toRem(1px);
+    border-radius: toRem(5px);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: toRem(32px);
+
+    @media #{$breakpoint-desktop-lg-only} {
+        max-width: toRem(1200px);
+        display: grid;
+        grid-template-columns: toRem(294px) toRem(294px);
+        grid-column-gap: 0;
+        grid-row-gap: toRem(48px);
+    }
+
+    @media #{$breakpoint-mobile} {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: toRem(32px);
+    }
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: toRem(294px);
+    text-align: center;
+    gap: toRem(24px);
+}
+
+.iconContainer {
+    width: toRem(82px);
+    height: toRem(82px);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.almond {
+    background-color: $color-almond;
+}
+
+.linen {
+    background-color: $color-linen;
+}
+
+.alabaster {
+    background-color: $color-alabaster;
+}
+
+.cyan {
+    background-color: $color-cyan;
+}
+
+.sectionLink {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+        text-decoration-color: $color-black;
+    }
+}

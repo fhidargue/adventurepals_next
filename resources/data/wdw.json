@@ -1,0 +1,56 @@
+{
+    "videoBanner": {
+        "title": "World Disney World",
+        "description": "We are 150+ specialists across marketing technology, strategy, service design and content.",
+        "buttonLink": {
+            "type": "primary",
+            "text": "EXPLORE SERVICE",
+            "alt": "EXPLORE SERVICE",
+            "target": "_self",
+            "url": "#"
+        },
+        "email": {
+            "text": "Quick Email us",
+            "email": "hey@agencyhd.com"
+        },
+        "buttonVideo": {
+            "playIcon": "play",
+            "pauseIcon": "pause",
+            "altPlay": "Play video banner",
+            "altPause": "Pause video banner"
+        },
+        "video": "/videos/disney-cruiseline.mp4"
+    },
+    "pageSections": {
+        "sections": [
+            {
+                "icon": "pie-chart",
+                "background": "almond",
+                "title": "Theme Parks",
+                "description": "How do you take high-end customer service",
+                "url": "#theme-parks"
+            },
+            {
+                "icon": "baby",
+                "background": "linen",
+                "title": "Water Parks",
+                "description": "How do you take high-end customer service",
+                "url": "#water-parks"
+            },
+            {
+                "icon": "chart-line",
+                "background": "cyan",
+                "title": "Park Tickets",
+                "description": "How do you take high-end customer service",
+                "url": "#park-tickets"
+            },
+            {
+                "icon": "baby",
+                "background": "alabaster",
+                "title": "Hotels",
+                "description": "How do you take high-end customer service",
+                "url": "#hotels"
+            }
+        ]
+    }
+}
