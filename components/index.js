@@ -29,3 +29,5 @@ export { default as SubpageHero } from "./SubpageHero";
 export { default as Errors } from "./Errors";
 export { default as Newsletter } from "./Newsletter";
 export { default as InputField } from "./InputField";
+export { default as VideoBanner } from "./VideoBanner";
+export { default as PageSections } from "./PageSections";
