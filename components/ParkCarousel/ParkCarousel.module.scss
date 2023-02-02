@@ -1,0 +1,22 @@
+@import "../../styles/main.scss";
+
+.container {
+    padding: toRem(90px) 0 0;
+}
+
+.topSection {
+    text-align: center;
+    max-width: toRem(768px);
+    margin: 0 auto toRem(70px);
+}
+
+.bottomSection {
+    display: flex;
+    padding: toRem(75px) 0;
+    background-image: url("/images/components/park-background.png");
+    min-height: 780px;
+
+    & .swiper-slide {
+        width: toRem(570px) !important;
+    }
+}

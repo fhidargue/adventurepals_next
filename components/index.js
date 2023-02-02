@@ -31,3 +31,5 @@ export { default as Newsletter } from "./Newsletter";
 export { default as InputField } from "./InputField";
 export { default as VideoBanner } from "./VideoBanner";
 export { default as PageSections } from "./PageSections";
+export { default as ParkCarousel } from "./ParkCarousel";
+export { default as ParkCard } from "./ParkCard";

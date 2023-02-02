@@ -1,4 +1,4 @@
-import { PageSections, VideoBanner } from "../../../components";
+import { PageSections, ParkCarousel, VideoBanner } from "../../../components";
 import data from "../../../resources/data/wdw.json";
 
 export default function Wdw() {
@@ -13,6 +13,11 @@ export default function Wdw() {
                 video={data.videoBanner.video}
             />
             <PageSections sections={data.pageSections.sections} />
+            <ParkCarousel
+                label={data.parkCarousel.label}
+                title={data.parkCarousel.title}
+                parks={data.parkCarousel.parks}
+            />
         </>
     );
 }

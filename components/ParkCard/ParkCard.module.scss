@@ -1,0 +1,43 @@
+@import "../../styles/main.scss";
+
+.container {
+    max-height: toRem(587px);
+    width: toRem(570px);
+    margin-right: toRem(30px);
+}
+
+.imageContainer {
+    position: relative;
+    width: toRem(570px);
+    height: toRem(455px);
+}
+
+.bottom {
+    border: solid toRem(1px) $color-black;
+    background-color: $color-white;
+}
+
+.bottomInner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: toRem(132px);
+    padding: toRem(44px);
+    margin: toRem(4px);
+    border: solid toRem(1px) $color-black;
+}
+
+.texts {
+    display: flex;
+    flex-direction: column;
+}
+
+.iconButton {
+    width: toRem(32px);
+    height: toRem(32px);
+}
+
+.name {
+    @include type-medium-copy();
+    font-weight: 800;
+}

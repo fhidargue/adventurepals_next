@@ -52,5 +52,47 @@
                 "url": "#hotels"
             }
         ]
+    },
+    "parkCarousel": {
+        "label": "NEW CASE STUDIES",
+        "title": "List of some of our recent client's work",
+        "parks": [
+            {
+                "image": "/images/places/parks/magic-kingdom.png",
+                "imageAlt": "Magic Kingdom park",
+                "label": "BRANDING",
+                "title": "Magic Kingdom",
+                "buttonAlt": "Download Magic Kingdom's map",
+                "buttonIcon": "download",
+                "buttonTarget": "_self"
+            },
+            {
+                "image": "/images/places/parks/epcot.png",
+                "imageAlt": "Epcot park",
+                "label": "BRANDING",
+                "title": "Epcot",
+                "buttonAlt": "Download Epcot's map",
+                "buttonIcon": "download",
+                "buttonTarget": "_self"
+            },
+            {
+                "image": "/images/places/parks/hollywood-studios.png",
+                "imageAlt": "Hollywood Studios park",
+                "label": "BRANDING",
+                "title": "Hollywood Studios",
+                "buttonAlt": "Download Hollywood Studios's map",
+                "buttonIcon": "download",
+                "buttonTarget": "_self"
+            },
+            {
+                "image": "/images/places/parks/animal-kingdom.png",
+                "imageAlt": "Animal Kingdom park",
+                "label": "BRANDING",
+                "title": "Animal Kingdom",
+                "buttonAlt": "Download Animal Kingdom's map",
+                "buttonIcon": "download",
+                "buttonTarget": "_self"
+            }
+        ]
     }
 }
