@@ -1,0 +1,24 @@
+@import "../../styles/main.scss";
+
+.hotels {
+    max-width: toRem(1170px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.container {
+    max-width: toRem(1170px);
+    margin: 0 auto;
+    padding: toRem(100px) 0;
+}
+
+.texts {
+    text-align: center;
+    margin-bottom: toRem(70px);
+}
+
+.title {
+    max-width: toRem(758px);
+    margin: 0 auto;
+}

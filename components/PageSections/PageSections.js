@@ -60,7 +60,7 @@ const PageSections = (props) => {
 };
 
 PageSections.propTypes = {
-    sections: PropTypes.object.isRequired,
+    sections: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
 };
 
 export default PageSections;

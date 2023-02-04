@@ -3,47 +3,21 @@ import styles from "./ParkCarousel.module.scss";
 import { Label, Title, ParkCard } from "../../components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination, A11y, Navigation, Virtual } from "swiper";
+import { useMobile } from "../../lib/useBreakpoints";
 
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import { useRef, useState } from "react";
 
 SwiperCore.use([Virtual, Navigation, Pagination]);
 
 const ParkCarousel = (props) => {
-    const { label, title, parks } = props;
+    const { label, title, colorBackground, parks, id } = props;
 
-    const [swiperRef, setSwiperRef] = useState(null);
-    const appendNumber = useRef(parks.length);
-    const prependNumber = useRef(1);
-    // Create array with 500 slides
-    const [slides, setSlides] = useState(
-        Array.from({ length: parks.length }).map(
-            (_, index) => `Slide ${index + 1}`
-        )
-    );
-
-    const prepend = () => {
-        setSlides([
-            `Slide ${prependNumber.current - 2}`,
-            `Slide ${prependNumber.current - 1}`,
-            ...slides,
-        ]);
-        prependNumber.current = prependNumber.current - 2;
-        swiperRef.slideTo(swiperRef.activeIndex + 2, 0);
-    };
-
-    const append = () => {
-        setSlides([...slides, "Slide " + ++appendNumber.current]);
-    };
-
-    const slideTo = (index) => {
-        swiperRef.slideTo(index - 1, 0);
-    };
+    const isMobile = useMobile();
 
     return (
-        <section className={styles.container}>
+        <section className={styles.container} id={id}>
             <div className={styles.topSection}>
                 <Label text={label} type="secondary" className={styles.label} />
                 <Title
@@ -55,19 +29,26 @@ const ParkCarousel = (props) => {
                     className={styles.title}
                 />
             </div>
-            <div className={styles.bottomSection}>
+            <div
+                className={`${styles.bottomSection} ${
+                    colorBackground && styles["platinum"]
+                }`}
+                id="park-carousel"
+            >
                 <Swiper
-                    onSwiper={setSwiperRef}
-                    slidesPerView={3}
+                    modules={[A11y]}
+                    slidesPerView={isMobile ? 1 : 3}
                     centeredSlides={true}
                     spaceBetween={30}
                     navigation={true}
-                    // slidesOffsetBefore={50}
                     virtual
                 >
                     {parks.map((park, index) => {
                         return (
-                            <SwiperSlide key={park} virtualIndex={index}>
+                            <SwiperSlide
+                                key={`${park.title}-${index}`}
+                                virtualIndex={index}
+                            >
                                 <ParkCard
                                     image={park.image}
                                     imageAlt={park.imageAlt}
@@ -91,6 +72,8 @@ ParkCarousel.propTypes = {
     label: PropTypes.string,
     title: PropTypes.string.isRequired,
     parks: PropTypes.array,
+    colorBackground: PropTypes.bool,
+    id: PropTypes.string,
 };
 
 export default ParkCarousel;

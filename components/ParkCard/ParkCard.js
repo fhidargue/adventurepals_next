@@ -17,7 +17,11 @@ const ParkCard = (props) => {
     return (
         <div className={styles.container}>
             <div className={styles.imageContainer}>
-                <Image fill src={image} alt={imageAlt} sizes="100%" />
+                <img
+                    src={image}
+                    aria-label={imageAlt}
+                    className={styles.image}
+                />
             </div>
             <div className={styles.bottom}>
                 <div className={styles.bottomInner}>

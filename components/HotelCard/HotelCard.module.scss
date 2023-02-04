@@ -1,0 +1,37 @@
+@import "../../styles/main.scss";
+
+.imageContainer {
+    position: relative;
+    width: toRem(370px);
+    height: toRem(308px);
+
+    & img {
+        border-radius: toRem(3px) toRem(3px) 0 0;
+    }
+}
+
+.content {
+    padding: toRem(30px);
+    border: solid toRem(1px) $color-black;
+    max-width: toRem(370px);
+    border-radius: 0 0 toRem(3px) toRem(3px);
+}
+
+.label {
+    padding: toRem(4px);
+    background-color: $color-yellow2;
+    @include type-small-copy();
+    font-size: toRem(14px);
+}
+
+.title {
+    margin: toRem(24px) 0 toRem(40px);
+    @include type-medium-copy();
+}
+
+.separator {
+    height: toRem(1px);
+    width: 100%;
+    background-color: $color-grey2;
+    margin-bottom: toRem(32px);
+}
