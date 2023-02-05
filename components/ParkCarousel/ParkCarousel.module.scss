@@ -8,6 +8,10 @@
     text-align: center;
     max-width: toRem(768px);
     margin: 0 auto toRem(70px);
+
+    @media #{$breakpoint-tablet} {
+        padding: 0 toRem(32px);
+    }
 }
 
 .bottomSection {
