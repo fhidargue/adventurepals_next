@@ -1,9 +1,12 @@
-import styles from './Services.module.scss';
-import data from './services.json';
-import Image from 'next/image';
-import { Label, Title, Text, ServiceCard, Link } from '../../components';
+import styles from "./Services.module.scss";
+import data from "./services.json";
+import Image from "next/image";
+import { Label, Title, Text, ServiceCard, Link } from "../../components";
+import PropTypes from "prop-types";
 
-const Services = () => {
+const Services = (props) => {
+    const { label, title, description, cta, services } = props;
+
     return (
         <section className={styles.services}>
             <div className={styles.layer}>
@@ -31,11 +34,11 @@ const Services = () => {
             </div>
             <div className={styles.wrapper}>
                 <div className={styles.label}>
-                    <Label text={data.label} type="secondary" />
+                    <Label text={label} type="secondary" />
                 </div>
                 <div className={styles.topSection}>
                     <Title
-                        title={data.title}
+                        title={title}
                         textAlign="left"
                         level="div"
                         style="h2"
@@ -44,23 +47,25 @@ const Services = () => {
                     <div>
                         <Text
                             className={styles.description}
-                            text={data.description}
+                            text={description}
                             size="md"
                             color="richBlack"
                             weight="normal"
                             p
                         />
-                        <Link
-                            text={data.cta.text}
-                            url={data.cta.link}
-                            target={data.cta.target}
-                            type={data.cta.type}
-                        />
+                        {cta && (
+                            <Link
+                                text={cta.text}
+                                url={cta.link}
+                                target={cta.target}
+                                type={cta.type}
+                            />
+                        )}
                     </div>
                 </div>
                 <div className={styles.bottomSection}>
                     <ol className={styles.serviceList}>
-                        {data.services.map((service, index) => {
+                        {services.map((service, index) => {
                             return (
                                 <li
                                     className={styles.serviceItem}
@@ -75,6 +80,14 @@ const Services = () => {
             </div>
         </section>
     );
+};
+
+Services.propTypes = {
+    label: PropTypes.string,
+    title: PropTypes.string,
+    description: PropTypes.string,
+    ctaL: PropTypes.object,
+    services: PropTypes.array,
 };
 
 export default Services;

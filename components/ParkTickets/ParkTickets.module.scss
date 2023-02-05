@@ -8,6 +8,51 @@
     }
 }
 
+.layer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    @media #{$breakpoint-mobile} {
+        display: none;
+    }
+}
+
+.yellowCircle {
+    position: absolute;
+    top: 0;
+    left: toRem(165px);
+
+    @media #{$breakpoint-tablet} {
+        display: none;
+    }
+}
+
+.roundLine {
+    position: absolute;
+    right: toRem(70px);
+    top: toRem(132px);
+    z-index: 1;
+
+    @media (max-width: 1380px) {
+        top: toRem(32px);
+    }
+
+    @media #{$breakpoint-tablet} {
+        display: none;
+    }
+}
+
+.blackCircle {
+    position: absolute;
+    right: toRem(182px);
+    top: toRem(585px);
+
+    @media (max-width: 1165px) {
+        display: none;
+    }
+}
+
 .wrapper {
     max-width: toRem(1135px);
     margin: 0 auto;
@@ -33,6 +78,8 @@
 
 .rightContent {
     width: 50%;
+    background-color: $color-white;
+    z-index: 2;
 
     @media #{$breakpoint-tablet} {
         width: 100%;
@@ -79,7 +126,7 @@
     width: 100%;
     height: 100%;
     background-size: cover;
-    object-fit: contain;
+    object-fit: cover;
 
     @media #{$breakpoint-tablet} {
         object-fit: cover;

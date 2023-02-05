@@ -1,10 +1,15 @@
-@import '../../styles/main.scss';
+@import "../../styles/main.scss";
 
 .serviceCard {
     background-color: $color-white;
     border: toRem(1px) solid $color-black;
     border-radius: toRem(5px);
+    max-width: toRem(358px);
     height: 100%;
+
+    @media (max-width: 930px) {
+        max-width: none;
+    }
 }
 
 .content {

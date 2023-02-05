@@ -1,4 +1,4 @@
-@import '../../styles/main.scss';
+@import "../../styles/main.scss";
 
 .services {
     background-color: $color-floral;
@@ -37,27 +37,28 @@
 }
 
 .serviceList {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1fr;
+    grid-gap: toRem(30px);
+    padding: 0 toRem(32px);
+    position: relative;
+    z-index: 2;
 
     & .serviceItem {
         flex-grow: 1;
     }
 
-    & .serviceItem:not(:last-child) {
-        margin-right: toRem(30px);
-
-        @media #{$breakpoint-tablet} {
-            margin-right: toRem(16px);
-        }
-
-        @media (max-width: 930px) {
-            margin-right: 0;
-            margin-bottom: toRem(32px);
-        }
+    @media (max-width: 930px) {
+        max-width: toRem(1170px);
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: toRem(32px);
     }
 
-    @media (max-width: 930px) {
+    @media #{$breakpoint-mobile} {
+        display: flex;
         flex-direction: column;
+        padding: 0;
     }
 }
 

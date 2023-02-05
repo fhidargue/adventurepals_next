@@ -6,9 +6,9 @@ import {
     ParkTickets,
     VideoBanner,
 } from "../../../components";
-import data from "../../../resources/data/wdw.json";
+import data from "../../../resources/data/universal.json";
 
-export default function Wdw() {
+export default function Universal() {
     return (
         <>
             <VideoBanner

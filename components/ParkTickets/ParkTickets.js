@@ -1,25 +1,37 @@
 import PropTypes from "prop-types";
 import styles from "./ParkTickets.module.scss";
 import { Label, Title, Icon, Text, Button } from "../../components";
-import { useDesktop } from "../../lib/useBreakpoints";
+import Image from "next/image";
 
 const ParkTickets = (props) => {
-    const {
-        label,
-        title,
-        description,
-        steps,
-        button,
-        image,
-        imageAlt,
-        mobileImage,
-        id,
-    } = props;
-
-    const isDesktop = useDesktop();
+    const { label, title, description, steps, button, image, imageAlt, id } =
+        props;
 
     return (
         <section className={styles.container} id={id}>
+            <div className={styles.layer}>
+                <Image
+                    src="/figures/yellow-circle.png"
+                    alt="yellow circle"
+                    width={27}
+                    height={21}
+                    className={styles.yellowCircle}
+                />
+                <Image
+                    src="/figures/round-line.png"
+                    alt="round line"
+                    width={97}
+                    height={106}
+                    className={styles.roundLine}
+                />
+                <Image
+                    src="/figures/black-circle.png"
+                    alt="single line"
+                    width={18}
+                    height={14}
+                    className={styles.blackCircle}
+                />
+            </div>
             <div className={styles.wrapper}>
                 <div className={styles.leftContent}>
                     <Label text={label} type="secondary" />
@@ -77,7 +89,7 @@ const ParkTickets = (props) => {
                 <div className={styles.rightContent}>
                     <div className={styles.iconContainer}>
                         <img
-                            src={!isDesktop ? mobileImage : image}
+                            src={image}
                             alt={imageAlt}
                             className={styles.image}
                         />
@@ -95,7 +107,6 @@ ParkTickets.propTypes = {
     steps: PropTypes.array,
     button: PropTypes.object,
     image: PropTypes.string,
-    mobileImage: PropTypes.string,
     imageAlt: PropTypes.string,
     id: PropTypes.string,
 };

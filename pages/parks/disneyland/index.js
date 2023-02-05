@@ -6,9 +6,9 @@ import {
     ParkTickets,
     VideoBanner,
 } from "../../../components";
-import data from "../../../resources/data/wdw.json";
+import data from "../../../resources/data/disneyland.json";
 
-export default function Wdw() {
+export default function Disneyland() {
     return (
         <>
             <VideoBanner
@@ -26,13 +26,6 @@ export default function Wdw() {
                 title={data.themeparkCarousel.title}
                 parks={data.themeparkCarousel.parks}
                 colorBackground={data.themeparkCarousel.colorBackground}
-            />
-            <ParkCarousel
-                id={data.waterparkCarousel.id}
-                label={data.waterparkCarousel.label}
-                title={data.waterparkCarousel.title}
-                parks={data.waterparkCarousel.parks}
-                colorBackground={data.waterparkCarousel.colorBackground}
             />
             <ParkTickets
                 id={data.parktickets.id}

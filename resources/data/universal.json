@@ -1,6 +1,6 @@
 {
     "videoBanner": {
-        "title": "World Disney World",
+        "title": "Universal Studios",
         "description": "We are 150+ specialists across marketing technology, strategy, service design and content.",
         "buttonLink": {
             "type": "primary",
@@ -60,38 +60,20 @@
         "colorBackground": false,
         "parks": [
             {
-                "image": "/images/places/parks/magic-kingdom.png",
-                "imageAlt": "Magic Kingdom park",
+                "image": "/images/places/parks/universal.png",
+                "imageAlt": "Universal studios park",
                 "label": "BRANDING",
-                "title": "Magic Kingdom",
-                "buttonAlt": "Download Magic Kingdom's map",
+                "title": "Universal Studios",
+                "buttonAlt": "Download Universal Studios's map",
                 "buttonIcon": "download",
                 "buttonTarget": "_self"
             },
             {
-                "image": "/images/places/parks/epcot.png",
-                "imageAlt": "Epcot park",
+                "image": "/images/places/parks/islands-adventure.png",
+                "imageAlt": "Island of Adventure park",
                 "label": "BRANDING",
-                "title": "Epcot",
-                "buttonAlt": "Download Epcot's map",
-                "buttonIcon": "download",
-                "buttonTarget": "_self"
-            },
-            {
-                "image": "/images/places/parks/hollywood-studios.png",
-                "imageAlt": "Hollywood Studios park",
-                "label": "BRANDING",
-                "title": "Hollywood Studios",
-                "buttonAlt": "Download Hollywood Studios's map",
-                "buttonIcon": "download",
-                "buttonTarget": "_self"
-            },
-            {
-                "image": "/images/places/parks/animal-kingdom.png",
-                "imageAlt": "Animal Kingdom park",
-                "label": "BRANDING",
-                "title": "Animal Kingdom",
-                "buttonAlt": "Download Animal Kingdom's map",
+                "title": "Universal's Island of Adventure",
+                "buttonAlt": "Download Island of Adventure's map",
                 "buttonIcon": "download",
                 "buttonTarget": "_self"
             }
@@ -104,20 +86,11 @@
         "colorBackground": true,
         "parks": [
             {
-                "image": "/images/places/waterparks/blizzard-beach.png",
-                "imageAlt": "Disney’s Blizzard Beach",
+                "image": "/images/places/waterparks/volcano-bay.png",
+                "imageAlt": "Universal's Volcano Bay",
                 "label": "BRANDING",
-                "title": "Disney’s Blizzard Beach",
-                "buttonAlt": "Download Disney’s Blizzard Beach's map",
-                "buttonIcon": "download",
-                "buttonTarget": "_self"
-            },
-            {
-                "image": "/images/places/waterparks/typhoon-lagoon.png",
-                "imageAlt": "Disney’s Typhoon Lagoon",
-                "label": "BRANDING",
-                "title": "Disney’s Typhoon Lagoon",
-                "buttonAlt": "Download Disney’s Typhoon Lagoon's map",
+                "title": "Universal's Volcano Bay",
+                "buttonAlt": "Download Universal's Volcano Bay's map",
                 "buttonIcon": "download",
                 "buttonTarget": "_self"
             }
@@ -146,10 +119,10 @@
         "title": "Recent Important Stories Daily Updated",
         "hotels": [
             {
-                "image": "/images/hotels/value-resorts.png",
+                "image": "/images/hotels/endless-summer.jpg",
                 "imageAlt": "Value hotels",
                 "label": "All Star Resorts",
-                "title": "Value Hotels",
+                "title": "Universal's Endless Summer Resort",
                 "button": {
                     "text": "Read more",
                     "type": "secondary",
@@ -157,14 +130,14 @@
                     "url": "#"
                 },
                 "circleImage": "/images/components/small-circle.png",
-                "circleAlt": "WDW image",
-                "circleText": "WDW"
+                "circleAlt": "UNIV image",
+                "circleText": "UNIV"
             },
             {
-                "image": "/images/hotels/caribbea-beach.jpg",
+                "image": "/images/hotels/aventura-hotel.jpg",
                 "imageAlt": "Moderate hotels",
                 "label": "Moderate label",
-                "title": "Moderate Hotels",
+                "title": "Universal's Aventura Hotel",
                 "button": {
                     "text": "Read more",
                     "type": "secondary",
@@ -172,14 +145,14 @@
                     "url": "#"
                 },
                 "circleImage": "/images/components/small-circle.png",
-                "circleAlt": "WDW image",
-                "circleText": "WDW"
+                "circleAlt": "UNIV image",
+                "circleText": "UNIV"
             },
             {
-                "image": "/images/hotels/deluxe-resort.jpg",
+                "image": "/images/hotels/cabana-bay.png",
                 "imageAlt": "Deluxe hotels",
                 "label": "Deluxe label",
-                "title": "Deluxe Hotels",
+                "title": "Universal's Cabana Bay Beach Resort",
                 "button": {
                     "text": "Read more",
                     "type": "secondary",
@@ -187,8 +160,68 @@
                     "url": "#"
                 },
                 "circleImage": "/images/components/small-circle.png",
-                "circleAlt": "WDW image",
-                "circleText": "WDW"
+                "circleAlt": "UNIV image",
+                "circleText": "UNIV"
+            },
+            {
+                "image": "/images/hotels/loews-sapphire.png",
+                "imageAlt": "Deluxe hotels",
+                "label": "Deluxe label",
+                "title": "Loews Sapphire Falls Resort",
+                "button": {
+                    "text": "Read more",
+                    "type": "secondary",
+                    "target": "_blank",
+                    "url": "#"
+                },
+                "circleImage": "/images/components/small-circle.png",
+                "circleAlt": "UNIV image",
+                "circleText": "UNIV"
+            },
+            {
+                "image": "/images/hotels/loews-royal.png",
+                "imageAlt": "Deluxe hotels",
+                "label": "Deluxe label",
+                "title": "Loews Royal Pacific Resort",
+                "button": {
+                    "text": "Read more",
+                    "type": "secondary",
+                    "target": "_blank",
+                    "url": "#"
+                },
+                "circleImage": "/images/components/small-circle.png",
+                "circleAlt": "UNIV image",
+                "circleText": "UNIV"
+            },
+            {
+                "image": "/images/hotels/hard-rock.png",
+                "imageAlt": "Deluxe hotels",
+                "label": "Deluxe label",
+                "title": "Hard Rock Hotel",
+                "button": {
+                    "text": "Read more",
+                    "type": "secondary",
+                    "target": "_blank",
+                    "url": "#"
+                },
+                "circleImage": "/images/components/small-circle.png",
+                "circleAlt": "UNIV image",
+                "circleText": "UNIV"
+            },
+            {
+                "image": "/images/hotels/portofino.jpg",
+                "imageAlt": "Deluxe hotels",
+                "label": "Deluxe label",
+                "title": "Loews Portofino Bay Hotel",
+                "button": {
+                    "text": "Read more",
+                    "type": "secondary",
+                    "target": "_blank",
+                    "url": "#"
+                },
+                "circleImage": "/images/components/small-circle.png",
+                "circleAlt": "UNIV image",
+                "circleText": "UNIV"
             }
         ]
     },

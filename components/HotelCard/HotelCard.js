@@ -1,15 +1,23 @@
 import PropTypes from "prop-types";
 import styles from "./HotelCard.module.scss";
-import Image from "next/image";
 import { Text, Button } from "../../components";
 
 const HotelCard = (props) => {
-    const { image, imageAlt, label, title, button } = props;
+    const {
+        image,
+        imageAlt,
+        label,
+        title,
+        button,
+        circleImage,
+        circleAtl,
+        circleText,
+    } = props;
 
     return (
         <li className={styles.container}>
             <div className={styles.imageContainer}>
-                <Image src={image} alt={imageAlt} fill />
+                <img src={image} alt={imageAlt} className={styles.image} />
             </div>
             <div className={styles.content}>
                 <span className={styles.label}>{label}</span>
@@ -22,14 +30,30 @@ const HotelCard = (props) => {
                     p
                 />
                 <div className={styles.separator}></div>
-                <Button
-                    url={button.url}
-                    text={button.text}
-                    linkTarget={button.target}
-                    type="tertiaryNoArrow"
-                    color="black"
-                    tag="a"
-                />
+                <div className={styles.bottom}>
+                    <Button
+                        url={button.url}
+                        text={button.text}
+                        linkTarget={button.target}
+                        type="tertiaryNoArrow"
+                        color="black"
+                        tag="a"
+                    />
+                    <div className={styles.info}>
+                        <img
+                            src={circleImage}
+                            alt={circleAtl}
+                            className={styles.image}
+                        />
+                        <Text
+                            className={styles.infoText}
+                            text={circleText}
+                            size="sm"
+                            color="richBlack"
+                            weight="bold"
+                        />
+                    </div>
+                </div>
             </div>
         </li>
     );
@@ -41,6 +65,9 @@ HotelCard.propTypes = {
     label: PropTypes.string,
     title: PropTypes.string,
     button: PropTypes.object,
+    circleImage: PropTypes.string,
+    circleAtl: PropTypes.string,
+    circleText: PropTypes.string,
 };
 
 export default HotelCard;

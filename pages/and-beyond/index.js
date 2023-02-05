@@ -1,21 +1,17 @@
-import {
-    AboutUs,
-    HomepageHero,
-    Video,
-    Services,
-    Places,
-    Information,
-    TeamMembers,
-    ContactBanner,
-} from "../components";
-import data from "../resources/data/home.json";
+import { SubpageHero, Services, ContactBanner } from "../../components";
+import data from "../../resources/data/beyond.json";
 
-export default function Home() {
+export default function AndBeyond() {
     return (
         <>
-            <HomepageHero />
-            <AboutUs />
-            <Video />
+            <SubpageHero
+                backImage={data.subpageHero.backImage}
+                homeText={data.subpageHero.homeLink.text}
+                homeUrl={data.subpageHero.homeLink.url}
+                homeTarget={data.subpageHero.homeLink.target}
+                title={data.subpageHero.title}
+                pageText={data.subpageHero.title}
+            />
             <Services
                 label={data.services.label}
                 title={data.services.title}
@@ -23,9 +19,6 @@ export default function Home() {
                 cta={data.services.cta}
                 services={data.services.services}
             />
-            <Places />
-            <Information />
-            <TeamMembers />
             <ContactBanner
                 question={data.contactBanner.question}
                 buttonText={data.contactBanner.buttonText}

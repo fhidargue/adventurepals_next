@@ -1,6 +1,6 @@
 {
     "videoBanner": {
-        "title": "World Disney World",
+        "title": "Disneyland",
         "description": "We are 150+ specialists across marketing technology, strategy, service design and content.",
         "buttonLink": {
             "type": "primary",
@@ -31,13 +31,6 @@
                 "url": "#theme-parks"
             },
             {
-                "icon": "baby",
-                "background": "linen",
-                "title": "Water Parks",
-                "description": "How do you take high-end customer service",
-                "url": "#water-parks"
-            },
-            {
                 "icon": "chart-line",
                 "background": "cyan",
                 "title": "Park Tickets",
@@ -60,64 +53,20 @@
         "colorBackground": false,
         "parks": [
             {
-                "image": "/images/places/parks/magic-kingdom.png",
-                "imageAlt": "Magic Kingdom park",
+                "image": "/images/places/parks/disneyland.png",
+                "imageAlt": "Disneyland",
                 "label": "BRANDING",
-                "title": "Magic Kingdom",
-                "buttonAlt": "Download Magic Kingdom's map",
+                "title": "Disneyland",
+                "buttonAlt": "Download Disneyland's map",
                 "buttonIcon": "download",
                 "buttonTarget": "_self"
             },
             {
-                "image": "/images/places/parks/epcot.png",
-                "imageAlt": "Epcot park",
+                "image": "/images/places/parks/disneyland-adventure.png",
+                "imageAlt": "Disney California Adventure",
                 "label": "BRANDING",
-                "title": "Epcot",
-                "buttonAlt": "Download Epcot's map",
-                "buttonIcon": "download",
-                "buttonTarget": "_self"
-            },
-            {
-                "image": "/images/places/parks/hollywood-studios.png",
-                "imageAlt": "Hollywood Studios park",
-                "label": "BRANDING",
-                "title": "Hollywood Studios",
-                "buttonAlt": "Download Hollywood Studios's map",
-                "buttonIcon": "download",
-                "buttonTarget": "_self"
-            },
-            {
-                "image": "/images/places/parks/animal-kingdom.png",
-                "imageAlt": "Animal Kingdom park",
-                "label": "BRANDING",
-                "title": "Animal Kingdom",
-                "buttonAlt": "Download Animal Kingdom's map",
-                "buttonIcon": "download",
-                "buttonTarget": "_self"
-            }
-        ]
-    },
-    "waterparkCarousel": {
-        "id": "water-parks",
-        "label": "NEW CASE STUDIES",
-        "title": "List of some of our recent client's work",
-        "colorBackground": true,
-        "parks": [
-            {
-                "image": "/images/places/waterparks/blizzard-beach.png",
-                "imageAlt": "Disney’s Blizzard Beach",
-                "label": "BRANDING",
-                "title": "Disney’s Blizzard Beach",
-                "buttonAlt": "Download Disney’s Blizzard Beach's map",
-                "buttonIcon": "download",
-                "buttonTarget": "_self"
-            },
-            {
-                "image": "/images/places/waterparks/typhoon-lagoon.png",
-                "imageAlt": "Disney’s Typhoon Lagoon",
-                "label": "BRANDING",
-                "title": "Disney’s Typhoon Lagoon",
-                "buttonAlt": "Download Disney’s Typhoon Lagoon's map",
+                "title": "Disney California Adventure",
+                "buttonAlt": "Download Disney California Adventure's map",
                 "buttonIcon": "download",
                 "buttonTarget": "_self"
             }
@@ -146,10 +95,10 @@
         "title": "Recent Important Stories Daily Updated",
         "hotels": [
             {
-                "image": "/images/hotels/value-resorts.png",
-                "imageAlt": "Value hotels",
-                "label": "All Star Resorts",
-                "title": "Value Hotels",
+                "image": "/images/hotels/grand-californian.png",
+                "imageAlt": "Disney's Grand Californian Hotel & Spa",
+                "label": "Hotel & Spa",
+                "title": "Disney's Grand Californian Hotel & Spa",
                 "button": {
                     "text": "Read more",
                     "type": "secondary",
@@ -157,14 +106,14 @@
                     "url": "#"
                 },
                 "circleImage": "/images/components/small-circle.png",
-                "circleAlt": "WDW image",
-                "circleText": "WDW"
+                "circleAlt": "DL image",
+                "circleText": "DL"
             },
             {
-                "image": "/images/hotels/caribbea-beach.jpg",
+                "image": "/images/hotels/disneyland-hotel.png",
                 "imageAlt": "Moderate hotels",
                 "label": "Moderate label",
-                "title": "Moderate Hotels",
+                "title": "Disneyland Hotel",
                 "button": {
                     "text": "Read more",
                     "type": "secondary",
@@ -172,14 +121,14 @@
                     "url": "#"
                 },
                 "circleImage": "/images/components/small-circle.png",
-                "circleAlt": "WDW image",
-                "circleText": "WDW"
+                "circleAlt": "DL image",
+                "circleText": "DL"
             },
             {
-                "image": "/images/hotels/deluxe-resort.jpg",
+                "image": "/images/hotels/paradise-pier.jpg",
                 "imageAlt": "Deluxe hotels",
                 "label": "Deluxe label",
-                "title": "Deluxe Hotels",
+                "title": "Disney's Paradise Pier Hotel",
                 "button": {
                     "text": "Read more",
                     "type": "secondary",
@@ -187,8 +136,8 @@
                     "url": "#"
                 },
                 "circleImage": "/images/components/small-circle.png",
-                "circleAlt": "WDW image",
-                "circleText": "WDW"
+                "circleAlt": "DL image",
+                "circleText": "DL"
             }
         ]
     },

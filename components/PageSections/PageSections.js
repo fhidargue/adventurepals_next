@@ -7,7 +7,6 @@ const PageSections = (props) => {
 
     const goToSection = (section) => {
         if (window !== "undefined") {
-            console.log(window.location.href + `${section}`);
             return window.location.href + `${section}`;
         }
     };
