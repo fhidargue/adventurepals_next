@@ -1,0 +1,109 @@
+@import "../../styles/main.scss";
+
+.container {
+    max-width: toRem(370px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media #{$breakpoint-mobile} {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+.imageContainer {
+    position: relative;
+    width: toRem(370px);
+    height: toRem(308px);
+
+    @media #{$breakpoint-mobile} {
+        width: 100%;
+    }
+
+    & img {
+        border-radius: toRem(3px) toRem(3px) 0 0;
+        width: 100%;
+        height: 100%;
+
+        @media #{$breakpoint-mobile} {
+            object-fit: cover;
+        }
+    }
+}
+
+.content {
+    padding: toRem(30px);
+    border: solid toRem(1px) $color-black;
+    max-width: toRem(370px);
+    border-radius: 0 0 toRem(3px) toRem(3px);
+    min-height: toRem(300px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media #{$breakpoint-mobile} {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+.label {
+    padding: toRem(4px);
+    background-color: $color-yellow2;
+    @include type-small-copy();
+    font-size: toRem(14px);
+    width: fit-content;
+}
+
+.title {
+    margin: toRem(24px) 0 toRem(40px);
+    @include type-medium-copy();
+
+    @media #{$breakpoint-mobile} {
+        margin: toRem(24px) 0;
+    }
+}
+
+.separator {
+    height: toRem(1px);
+    width: 100%;
+    background-color: $color-grey2;
+    margin-bottom: toRem(32px);
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media #{$breakpoint-mobile} {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: toRem(16px);
+    }
+
+    & button,
+    a {
+        min-width: toRem(154px);
+
+        @media #{$breakpoint-mobile} {
+            width: 100%;
+        }
+    }
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: toRem(12px);
+
+    @media #{$breakpoint-mobile} {
+        display: none;
+    }
+}
+
+.image {
+    border-radius: 50%;
+}

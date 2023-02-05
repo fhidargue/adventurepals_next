@@ -52,5 +52,151 @@
                 "url": "#hotels"
             }
         ]
+    },
+    "themeparkCarousel": {
+        "id": "theme-parks",
+        "label": "NEW CASE STUDIES",
+        "title": "List of some of our recent client's work",
+        "colorBackground": false,
+        "parks": [
+            {
+                "image": "/images/places/parks/magic-kingdom.png",
+                "imageAlt": "Magic Kingdom park",
+                "label": "BRANDING",
+                "title": "Magic Kingdom",
+                "buttonAlt": "Download Magic Kingdom's map",
+                "buttonIcon": "download",
+                "buttonTarget": "_self"
+            },
+            {
+                "image": "/images/places/parks/epcot.png",
+                "imageAlt": "Epcot park",
+                "label": "BRANDING",
+                "title": "Epcot",
+                "buttonAlt": "Download Epcot's map",
+                "buttonIcon": "download",
+                "buttonTarget": "_self"
+            },
+            {
+                "image": "/images/places/parks/hollywood-studios.png",
+                "imageAlt": "Hollywood Studios park",
+                "label": "BRANDING",
+                "title": "Hollywood Studios",
+                "buttonAlt": "Download Hollywood Studios's map",
+                "buttonIcon": "download",
+                "buttonTarget": "_self"
+            },
+            {
+                "image": "/images/places/parks/animal-kingdom.png",
+                "imageAlt": "Animal Kingdom park",
+                "label": "BRANDING",
+                "title": "Animal Kingdom",
+                "buttonAlt": "Download Animal Kingdom's map",
+                "buttonIcon": "download",
+                "buttonTarget": "_self"
+            }
+        ]
+    },
+    "waterparkCarousel": {
+        "id": "water-parks",
+        "label": "NEW CASE STUDIES",
+        "title": "List of some of our recent client's work",
+        "colorBackground": true,
+        "parks": [
+            {
+                "image": "/images/places/waterparks/blizzard-beach.png",
+                "imageAlt": "Disney’s Blizzard Beach",
+                "label": "BRANDING",
+                "title": "Disney’s Blizzard Beach",
+                "buttonAlt": "Download Disney’s Blizzard Beach's map",
+                "buttonIcon": "download",
+                "buttonTarget": "_self"
+            },
+            {
+                "image": "/images/places/waterparks/typhoon-lagoon.png",
+                "imageAlt": "Disney’s Typhoon Lagoon",
+                "label": "BRANDING",
+                "title": "Disney’s Typhoon Lagoon",
+                "buttonAlt": "Download Disney’s Typhoon Lagoon's map",
+                "buttonIcon": "download",
+                "buttonTarget": "_self"
+            }
+        ]
+    },
+    "parktickets": {
+        "id": "park-tickets",
+        "label": "ABOUT AGENCY",
+        "title": "We test and deliver the solution",
+        "description": "This is where your solution is launched on the real market with real customers",
+        "steps": [
+            "Using data-driven insights to fuel results-driven content and communication concepts.",
+            "Bringing together execution and vision to make sure great work leads to greatness for clients."
+        ],
+        "button": {
+            "text": "Explore",
+            "target": "_self",
+            "url": "#"
+        },
+        "image": "/images/places/parks/animal-kingdom.png",
+        "imageAlt": "Park tickets image"
+    },
+    "hotels": {
+        "id": "hotels",
+        "label": "OUR BLOG UPDATE",
+        "title": "Recent Important Stories Daily Updated",
+        "hotels": [
+            {
+                "image": "/images/hotels/value-resorts.png",
+                "imageAlt": "Value hotels",
+                "label": "All Star Resorts",
+                "title": "Value Hotels",
+                "button": {
+                    "text": "Read more",
+                    "type": "secondary",
+                    "target": "_blank",
+                    "url": "#"
+                },
+                "circleImage": "/images/components/small-circle.png",
+                "circleAlt": "WDW image",
+                "circleText": "WDW"
+            },
+            {
+                "image": "/images/hotels/caribbea-beach.jpg",
+                "imageAlt": "Moderate hotels",
+                "label": "Moderate label",
+                "title": "Moderate Hotels",
+                "button": {
+                    "text": "Read more",
+                    "type": "secondary",
+                    "target": "_blank",
+                    "url": "#"
+                },
+                "circleImage": "/images/components/small-circle.png",
+                "circleAlt": "WDW image",
+                "circleText": "WDW"
+            },
+            {
+                "image": "/images/hotels/deluxe-resort.jpg",
+                "imageAlt": "Deluxe hotels",
+                "label": "Deluxe label",
+                "title": "Deluxe Hotels",
+                "button": {
+                    "text": "Read more",
+                    "type": "secondary",
+                    "target": "_blank",
+                    "url": "#"
+                },
+                "circleImage": "/images/components/small-circle.png",
+                "circleAlt": "WDW image",
+                "circleText": "WDW"
+            }
+        ]
+    },
+    "contactBanner": {
+        "question": "Are you planning any projects? contact us",
+        "buttonText": "LETS TALK",
+        "buttonType": "secondaryDark",
+        "buttonUrl": "#",
+        "buttonTarget": "_self"
     }
 }

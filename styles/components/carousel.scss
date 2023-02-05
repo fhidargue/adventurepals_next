@@ -12,3 +12,48 @@
         background-color: $color-white !important;
     }
 }
+
+#park-carousel {
+    & .swiper {
+        width: 100%;
+    }
+
+    & .swiper-slide {
+        &:hover {
+            cursor: grab;
+        }
+
+        @media #{$breakpoint-mobile} {
+            min-width: toRem(300px);
+            padding: 0 toRem(32px);
+        }
+    }
+
+    & .swiper-button-prev,
+    & .swiper-button-next {
+        padding: toRem(26px);
+        background-color: $color-yellow2;
+        border: solid toRem(2px) $color-yellow2;
+        border-radius: toRem(3px);
+        max-height: toRem(52px);
+        max-width: toRem(52px);
+
+        &:hover,
+        &:focus {
+            background-color: $color-yellow-hover;
+        }
+
+        &:after {
+            font-size: toRem(22px);
+            color: $color-black;
+        }
+
+        &.swiper-button-disabled {
+            opacity: 1;
+            background-color: $color-white;
+            border: solid toRem(2px) $color-black;
+            max-height: toRem(52px);
+            max-width: toRem(52px);
+        }
+    }
+}

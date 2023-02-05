@@ -7,7 +7,6 @@ const PageSections = (props) => {
 
     const goToSection = (section) => {
         if (window !== "undefined") {
-            console.log(window.location.href + `${section}`);
             return window.location.href + `${section}`;
         }
     };
@@ -60,7 +59,7 @@ const PageSections = (props) => {
 };
 
 PageSections.propTypes = {
-    sections: PropTypes.object.isRequired,
+    sections: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
 };
 
 export default PageSections;

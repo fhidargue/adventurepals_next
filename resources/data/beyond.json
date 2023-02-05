@@ -1,0 +1,121 @@
+{
+    "subpageHero": {
+        "backImage": "/images/components/up.png",
+        "homeLink": {
+            "text": "Home",
+            "url": "/",
+            "target": "_self"
+        },
+        "title": "...and Beyond!"
+    },
+    "services": {
+        "label": "WHAT WE OFFER",
+        "title": "We’re Offering Business Marketing Service",
+        "description": "Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor anagi icdunt",
+        "services": [
+            {
+                "icon": "megaphone-lines",
+                "background": "isabelline",
+                "title": "Marketing",
+                "features": [
+                    "Marketing Automation",
+                    "Lead Generation",
+                    "Seo Marketing"
+                ],
+                "button": {
+                    "text": "Read More",
+                    "link": "#",
+                    "target": "_blank",
+                    "type": "tertiary"
+                }
+            },
+            {
+                "icon": "paintbucket",
+                "background": "snow",
+                "title": "Web Design",
+                "features": [
+                    "Web Design",
+                    "Interaction Design",
+                    "Interaction Design"
+                ],
+                "button": {
+                    "text": "Read More",
+                    "link": "#",
+                    "target": "_blank",
+                    "type": "tertiary"
+                }
+            },
+            {
+                "icon": "scan",
+                "background": "honeydew",
+                "title": "Development",
+                "features": [
+                    "UI Development",
+                    "Digital Production",
+                    "App Development"
+                ],
+                "button": {
+                    "text": "Read More",
+                    "link": "#",
+                    "target": "_blank",
+                    "type": "tertiary"
+                }
+            },
+            {
+                "icon": "megaphone-lines",
+                "background": "isabelline",
+                "title": "Marketing",
+                "features": [
+                    "Marketing Automation",
+                    "Lead Generation",
+                    "Seo Marketing"
+                ],
+                "button": {
+                    "text": "Read More",
+                    "link": "#",
+                    "target": "_blank",
+                    "type": "tertiary"
+                }
+            },
+            {
+                "icon": "paintbucket",
+                "background": "snow",
+                "title": "Web Design",
+                "features": [
+                    "Web Design",
+                    "Interaction Design",
+                    "Interaction Design"
+                ],
+                "button": {
+                    "text": "Read More",
+                    "link": "#",
+                    "target": "_blank",
+                    "type": "tertiary"
+                }
+            },
+            {
+                "icon": "scan",
+                "background": "honeydew",
+                "title": "Development",
+                "features": [
+                    "UI Development",
+                    "Digital Production",
+                    "App Development"
+                ],
+                "button": {
+                    "text": "Read More",
+                    "link": "#",
+                    "target": "_blank",
+                    "type": "tertiary"
+                }
+            }
+        ]
+    },
+    "contactBanner": {
+        "question": "Are you planning any projects? contact us",
+        "buttonText": "LETS TALK",
+        "buttonType": "secondaryDark",
+        "buttonUrl": "#",
+        "buttonTarget": "_self"
+    }
+}

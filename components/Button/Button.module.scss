@@ -70,6 +70,52 @@
     }
 }
 
+.tertiaryNoArrow {
+    padding: toRem(14px) toRem(20px);
+    max-width: toRem(171px);
+    max-height: toRem(44px);
+    background-color: $color-white;
+    text-decoration: none;
+    border: toRem(1px) solid $color-black;
+    max-width: none;
+
+    @include button-focus($color-black);
+
+    &:hover {
+        background-color: $color-black;
+        color: $color-white;
+    }
+}
+
+.tertiaryYellow {
+    padding: toRem(14px) toRem(20px);
+    max-width: toRem(171px);
+    max-height: toRem(44px);
+    background-color: $color-yellow2;
+    font-weight: 800;
+    text-decoration: none;
+
+    @include button-focus($color-black);
+
+    & span {
+        &::after {
+            content: url("/icons/arrow-right.svg");
+            margin-left: toRem(8px);
+            position: relative;
+            top: toRem(6px);
+        }
+    }
+
+    &:hover {
+        background-color: $color-yellow-hover;
+    }
+
+    @media #{$breakpoint-mobile} {
+        max-width: none;
+        max-height: toRem(64px);
+    }
+}
+
 .tertiaryDark {
     background-color: $color-black;
     color: $color-white;
@@ -108,6 +154,24 @@
             font-size: toRem(18px);
             line-height: toRem(24px);
         }
+    }
+}
+
+.download {
+    background-color: $color-white;
+    padding: toRem(15px);
+    border-radius: 50%;
+    border: solid toRem(1px) $color-black;
+
+    @include button-hover($color-grey2);
+    @include button-focus($color-black);
+
+    &:focus::after {
+        border-radius: 50%;
+        top: toRem(-4px);
+        bottom: toRem(-4px);
+        left: toRem(-4px);
+        right: toRem(-4px);
     }
 }
 

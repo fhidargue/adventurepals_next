@@ -1,0 +1,35 @@
+@import "../../styles/main.scss";
+
+.container {
+    padding: toRem(90px) 0 0;
+}
+
+.topSection {
+    text-align: center;
+    max-width: toRem(768px);
+    margin: 0 auto toRem(70px);
+}
+
+.bottomSection {
+    display: flex;
+    padding: toRem(75px) 0;
+    background-image: url("/images/components/park-background.png");
+    height: toRem(750px);
+
+    @media (max-width: 1640px) {
+        height: toRem(720px);
+    }
+
+    @media (max-width: 1320px) {
+        height: toRem(630px);
+    }
+
+    @media #{$breakpoint-tablet} {
+        height: toRem(562px);
+    }
+}
+
+.platinum {
+    background-image: none;
+    background-color: $color-platinum3;
+}

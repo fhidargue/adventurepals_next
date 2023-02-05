@@ -35,7 +35,7 @@
         },
         {
             "text": "Disneyland",
-            "url": "/",
+            "url": "/parks/disneyland",
             "target": "_self",
             "innerLinks": [
                 {
@@ -57,7 +57,7 @@
         },
         {
             "text": "Universal",
-            "url": "/",
+            "url": "/parks/universal",
             "target": "_self",
             "innerLinks": [
                 {
@@ -84,7 +84,7 @@
         },
         {
             "text": "... and Beyond!",
-            "url": "/",
+            "url": "/and-beyond",
             "target": "_self",
             "innerLinks": [
                 {
