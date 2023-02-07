@@ -19,7 +19,10 @@ export default function Wdw() {
                 buttonVideo={data.videoBanner.buttonVideo}
                 video={data.videoBanner.video}
             />
-            <PageSections sections={data.pageSections.sections} />
+            <PageSections
+                sections={data.pageSections.sections}
+                hasLinks={data.pageSections.hasLinks}
+            />
             <ParkCarousel
                 id={data.themeparkCarousel.id}
                 label={data.themeparkCarousel.label}

@@ -1,9 +1,11 @@
 import styles from "./Information.module.scss";
-import data from "./info.json";
 import Image from "next/image";
 import { Title, Accordion } from "../../components";
+import PropTypes from "prop-types";
 
-const Information = () => {
+const Information = (props) => {
+    const { title, image, imageAlt, accordion } = props;
+
     return (
         <section className={styles.container}>
             <div className={styles.layer}>
@@ -32,7 +34,7 @@ const Information = () => {
             <div className={styles.wrapper}>
                 <Title
                     className={styles.title}
-                    title={data.title}
+                    title={title}
                     textAlign="left"
                     level="div"
                     style="h2"
@@ -40,11 +42,11 @@ const Information = () => {
                 />
                 <div className={styles.content}>
                     <div className={styles.leftSide}>
-                        <Image src={data.image} alt={data.imageAlt} fill />
+                        <Image src={image} alt={imageAlt} fill />
                     </div>
                     <div className={styles.rightSide}>
                         <Accordion
-                            accordion={data.accordion}
+                            accordion={accordion}
                             textColor="richBlack"
                         />
                     </div>
@@ -52,6 +54,13 @@ const Information = () => {
             </div>
         </section>
     );
+};
+
+Information.propTypes = {
+    title: PropTypes.string,
+    image: PropTypes.string,
+    imageAlt: PropTypes.string,
+    accordion: PropTypes.array,
 };
 
 export default Information;

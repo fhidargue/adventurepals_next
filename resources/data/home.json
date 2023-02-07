@@ -1,4 +1,68 @@
 {
+    "homepageHero": {
+        "slides": [
+            {
+                "backgroundImage": "/images/homepage/disney.png",
+                "label": "Marketing Solution",
+                "title": "We Are Business Marketing Agency",
+                "buttonType": "primary",
+                "buttonText": "FIND SOLUTION",
+                "buttonAlt": "FIND SOLUTION",
+                "buttonTarget": "_self",
+                "buttonUrl": "#"
+            },
+            {
+                "backgroundImage": "/images/homepage/magic.png",
+                "label": "Marketing Solution2",
+                "title": "We Are Business Marketing Agency2",
+                "buttonType": "primary",
+                "buttonText": "FIND SOLUTION",
+                "buttonAlt": "FIND SOLUTION",
+                "buttonTarget": "_self",
+                "buttonUrl": "#"
+            },
+            {
+                "backgroundImage": "/images/homepage/vacations.png",
+                "label": "Marketing Solution3",
+                "title": "We Are Business Marketing Agency3",
+                "buttonType": "primary",
+                "buttonText": "FIND SOLUTION",
+                "buttonAlt": "FIND SOLUTION",
+                "buttonTarget": "_self",
+                "buttonUrl": "#"
+            }
+        ]
+    },
+    "about": {
+        "label": "MARKETING AGENCY",
+        "title": "Creative Business Consulting Group",
+        "description": "Digital marketing Suspendisse ullamcorper sem a tristique molestie. Suspendisse egestas interdum. passages of lorem in free market to available",
+        "mission": "We are the startup studio we solve your Marketing Problem",
+        "cards": [
+            {
+                "icon": "megaphone",
+                "text": "Professionals Marketing"
+            },
+            {
+                "icon": "tag",
+                "text": "Marketing Strategy"
+            }
+        ],
+        "bottomText": "Lorem ipsum began variations of passages of lorem in free market to available, but the majority have suffered",
+        "backImage": "/images/us/juanyluci.png",
+        "frontImage": "/images/us/robertyvivi.png",
+        "mobileImage": "/images/aboutus/aboutus-frontimage.png",
+        "circle": {
+            "text": "Job Done",
+            "amount": "3.5k"
+        }
+    },
+    "video": {
+        "thumbnail": "/images/components/video-thumbnail.png",
+        "video": "https://www.youtube.com/watch?v=N3yIWRFi7_Q",
+        "altText": "Alternative text for the image thumbnail",
+        "altTextVideo": "Alternative text for the video"
+    },
     "services": {
         "label": "WHAT WE OFFER",
         "title": "We’re Offering Business Marketing Service",
@@ -57,6 +121,99 @@
                     "target": "_blank",
                     "type": "tertiary"
                 }
+            }
+        ]
+    },
+    "places": {
+        "label": "NEW CASE STUDIES",
+        "title": "List of some of our recent client's work",
+        "places": [
+            {
+                "image": "/images/places/parks/animal-kingdom.png",
+                "imageAlt": "Animal kongdom park",
+                "label": "BRANDING",
+                "title": "Digital Production",
+                "buttonAlt": "Go to Animal Kingdom's page",
+                "buttonUrl": "/parks/animal-kingdom",
+                "buttonTarget": "_blank"
+            },
+            {
+                "image": "/images/places/parks/epcot.png",
+                "imageAlt": "Epcot park",
+                "label": "BRANDING",
+                "title": "Digital Production",
+                "buttonAlt": "Go to Epcot's page",
+                "buttonUrl": "/parks/epcot",
+                "buttonTarget": "_blank"
+            },
+            {
+                "image": "/images/places/parks/hollywood-studios.png",
+                "imageAlt": "Hollywood studios park",
+                "label": "BRANDING",
+                "title": "Digital Production",
+                "buttonAlt": "Go to Hollywood studios's page",
+                "buttonUrl": "/parks/hollywood-studios",
+                "buttonTarget": "_blank"
+            }
+        ],
+        "card": {
+            "description": "We stay curious even at this stage, and we challenge the solution until our approach works.",
+            "buttonText": "MORE WORK",
+            "buttonUrl": "https://google.com",
+            "buttonTarget": "_blank",
+            "backgroundImage": "/images/components/card-background.png"
+        }
+    },
+    "information": {
+        "title": "We can help you to accelerate your online growth.",
+        "image": "/images/places/parks/magic-kingdom.png",
+        "imageAlt": "Information component image",
+        "accordion": [
+            {
+                "title": "Insights and analysis",
+                "information": "We believe that strategy is about creating patterns in a disparate mix of ideas, whether that's building new processes your channel approach to keep pace with the social first world."
+            },
+            {
+                "title": "Social listening",
+                "information": "We believe that strategy is about creating patterns in a disparate mix of ideas, whether that's building new processes your channel approach to keep pace with the social first world."
+            },
+            {
+                "title": "Data infrastructure",
+                "information": "We believe that strategy is about creating patterns in a disparate mix of ideas, whether that's building new processes your channel approach to keep pace with the social first world."
+            },
+            {
+                "title": "Data infrastructure",
+                "information": "We believe that strategy is about creating patterns in a disparate mix of ideas, whether that's building new processes your channel approach to keep pace with the social first world."
+            }
+        ]
+    },
+    "teamMembers": {
+        "label": "TEAM MEMBERS",
+        "title": "Our most qualified team members.",
+        "members": [
+            {
+                "image": "/images/aboutus/member-thumbnail.png",
+                "imageAlt": "First member image",
+                "position": "Analysist",
+                "name": "Mahfuz Riad"
+            },
+            {
+                "image": "/images/aboutus/member-thumbnail.png",
+                "imageAlt": "Second member image",
+                "position": "Designer",
+                "name": "Foqrul Islam"
+            },
+            {
+                "image": "/images/aboutus/member-thumbnail.png",
+                "imageAlt": "Third member image",
+                "position": "Developer",
+                "name": "Mahadi Al"
+            },
+            {
+                "image": "/images/aboutus/member-thumbnail.png",
+                "imageAlt": "Fourth member image",
+                "position": "QA",
+                "name": "Felipe Hidalgo"
             }
         ]
     },

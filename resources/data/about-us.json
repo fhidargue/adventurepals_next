@@ -1,0 +1,96 @@
+{
+    "subpageHero": {
+        "backImage": "/images/components/up.png",
+        "homeLink": {
+            "text": "Home",
+            "url": "/",
+            "target": "_self"
+        },
+        "title": "About Us"
+    },
+    "teamMembers": {
+        "label": "TEAM MEMBERS",
+        "title": "Our most qualified team members",
+        "members": [
+            {
+                "image": "/images/aboutus/member-thumbnail.png",
+                "imageAlt": "First member image",
+                "position": "Analysist",
+                "name": "Mahfuz Riad"
+            },
+            {
+                "image": "/images/aboutus/member-thumbnail.png",
+                "imageAlt": "Second member image",
+                "position": "Designer",
+                "name": "Foqrul Islam"
+            },
+            {
+                "image": "/images/aboutus/member-thumbnail.png",
+                "imageAlt": "Third member image",
+                "position": "Developer",
+                "name": "Mahadi Al"
+            },
+            {
+                "image": "/images/aboutus/member-thumbnail.png",
+                "imageAlt": "Fourth member image",
+                "position": "QA",
+                "name": "Felipe Hidalgo"
+            }
+        ]
+    },
+    "quoteCarousel": {
+        "quoteIcon": false,
+        "quotes": [
+            {
+                "title": "Mission",
+                "quote": "Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+                "author": "Mahfuz Riad",
+                "position": "Chief Designer"
+            },
+            {
+                "title": "Vision",
+                "quote": "Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+                "author": "Juan Hidalgo",
+                "position": "CEO"
+            }
+        ]
+    },
+    "pageSections": {
+        "hasLinks": false,
+        "sections": [
+            {
+                "icon": "pie-chart",
+                "background": "almond",
+                "title": "Finance Consulting",
+                "description": "How do you take high-end customer service",
+                "url": "#theme-parks"
+            },
+            {
+                "icon": "baby",
+                "background": "linen",
+                "title": "Different Thinking",
+                "description": "How do you take high-end customer service",
+                "url": "#water-parks"
+            },
+            {
+                "icon": "chart-line",
+                "background": "cyan",
+                "title": "Business Innovation",
+                "description": "How do you take high-end customer service",
+                "url": "#park-tickets"
+            }
+        ]
+    },
+    "newsletter": {
+        "title": "We believe in making the world a better experience",
+        "altText": "Newsletter form",
+        "placeholder": "Your email address",
+        "button": {
+            "text": "SUBMIT"
+        },
+        "message": "Subsrcibe for our upcoming latest articles and resources",
+        "successMessage": "Your email was sent successfully!",
+        "invalidEmailMessage": "Please enter a valid email address.",
+        "systemErrorMessage": "Something went wrong, please try again later."
+    }
+}

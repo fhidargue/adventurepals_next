@@ -3,7 +3,7 @@ import styles from "./PageSections.module.scss";
 import { Icon, Text, Button, Title } from "../../components";
 
 const PageSections = (props) => {
-    const { sections } = props;
+    const { sections, hasLinks } = props;
 
     const goToSection = (section) => {
         if (window !== "undefined") {
@@ -33,7 +33,20 @@ const PageSections = (props) => {
                                     imageDecorative
                                 />
                             </div>
-                            <a href={item.url} className={styles.sectionLink}>
+                            {hasLinks ? (
+                                <a
+                                    href={item.url}
+                                    className={styles.sectionLink}
+                                >
+                                    <Title
+                                        title={item.title}
+                                        level="div"
+                                        style="h3"
+                                        textAlign="center"
+                                        color="richBlack"
+                                    />
+                                </a>
+                            ) : (
                                 <Title
                                     title={item.title}
                                     level="div"
@@ -41,7 +54,7 @@ const PageSections = (props) => {
                                     textAlign="center"
                                     color="richBlack"
                                 />
-                            </a>
+                            )}
                             <Text
                                 className={styles.description}
                                 text={item.description}

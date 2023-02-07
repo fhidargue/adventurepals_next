@@ -40,17 +40,12 @@
             "links": [
                 {
                     "text": "About us",
-                    "url": "/",
+                    "url": "/about",
                     "target": "_self"
                 },
                 {
                     "text": "Meet our team",
-                    "url": "/",
-                    "target": "_self"
-                },
-                {
-                    "text": "Case stories",
-                    "url": "/",
+                    "url": "/about",
                     "target": "_self"
                 },
                 {
@@ -61,6 +56,11 @@
                 {
                     "text": "Contact",
                     "url": "/",
+                    "target": "_self"
+                },
+                {
+                    "text": "FAQs",
+                    "url": "/faq",
                     "target": "_self"
                 }
             ]

@@ -36,3 +36,6 @@ export { default as ParkCard } from "./ParkCard";
 export { default as ParkTickets } from "./ParkTickets";
 export { default as Hotels } from "./Hotels";
 export { default as HotelCard } from "./HotelCard";
+export { default as QuoteCarousel } from "./QuoteCarousel";
+export { default as Faq } from "./Faq";
+export { default as FaqButton } from "./FaqButton";

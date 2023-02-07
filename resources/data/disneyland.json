@@ -22,6 +22,7 @@
         "video": "/videos/disney-cruiseline.mp4"
     },
     "pageSections": {
+        "hasLinks": true,
         "sections": [
             {
                 "icon": "pie-chart",

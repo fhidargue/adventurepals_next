@@ -1,0 +1,51 @@
+@import "../../styles/main.scss";
+
+.button {
+    width: 100%;
+    border-radius: 0 toRem(4px) toRem(4px) 0;
+    border: none;
+    border-left: solid toRem(1px) $color-black;
+    background-color: $color-white;
+    position: relative;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $color-grey;
+    }
+
+    @include button-focus($color-black);
+}
+
+.open {
+    border-radius: toRem(4px);
+    border-left: none;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    padding: toRem(17px) toRem(32px);
+    text-align: left;
+
+    @media #{$breakpoint-mobile} {
+        gap: toRem(16px);
+    }
+}
+
+.bottom {
+    padding: toRem(11px) toRem(32px) toRem(28px);
+    text-align: left;
+}
+
+.question {
+    font-size: toRem(20px);
+    line-height: toRem(36px);
+}
