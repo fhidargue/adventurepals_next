@@ -1,0 +1,63 @@
+{
+    "subpageHero": {
+        "backImage": "/images/components/up.png",
+        "homeLink": {
+            "text": "Home",
+            "url": "/",
+            "target": "_self"
+        },
+        "title": "FAQ"
+    },
+    "faq": {
+        "title": "Questions & Answers",
+        "faqs": [
+            {
+                "question": "What does a marketing agency do?",
+                "answer": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, it look like readable English. Many desktop publishing packages and web."
+            },
+            {
+                "question": "Where can I find Agency Spotter on social media websites?",
+                "answer": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, it look like readable English. Many desktop publishing packages and web."
+            },
+            {
+                "question": "What social media platforms are best for my business?",
+                "answer": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, it look like readable English. Many desktop publishing packages and web."
+            },
+            {
+                "question": "What does responsive mean?",
+                "answer": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, it look like readable English. Many desktop publishing packages and web."
+            },
+            {
+                "question": "What pages should I include in my website?",
+                "answer": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, it look like readable English. Many desktop publishing packages and web."
+            },
+            {
+                "question": "If I already have a website, can I transfer it to another?",
+                "answer": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, it look like readable English. Many desktop publishing packages and web."
+            },
+            {
+                "question": "What is the main purpose of social media marketing?",
+                "answer": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, it look like readable English. Many desktop publishing packages and web."
+            }
+        ]
+    },
+    "contactBanner": {
+        "question": "Are you planning any projects? contact us",
+        "buttonText": "LETS TALK",
+        "buttonType": "secondaryDark",
+        "buttonUrl": "#",
+        "buttonTarget": "_self"
+    },
+    "newsletter": {
+        "title": "We believe in making the world a better experience",
+        "altText": "Newsletter form",
+        "placeholder": "Your email address",
+        "button": {
+            "text": "SUBMIT"
+        },
+        "message": "Subsrcibe for our upcoming latest articles and resources",
+        "successMessage": "Your email was sent successfully!",
+        "invalidEmailMessage": "Please enter a valid email address.",
+        "systemErrorMessage": "Something went wrong, please try again later."
+    }
+}

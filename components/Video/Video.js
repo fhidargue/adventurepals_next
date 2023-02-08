@@ -1,20 +1,22 @@
 import { useState } from "react";
 import { Icon } from "../../components";
 import Image from "next/image";
-import data from "./video.json";
 import styles from "./Video.module.scss";
+import PropTypes from "prop-types";
 
-const Video = () => {
+const Video = (props) => {
+    const { thumbnail, video, altText, altTextVideo } = props;
+
     const youtubeEmbedUrl =
         "https://www.youtube.com/embed/{0}?autoplay=1&rel=0";
     const [showVideo, setShowVideo] = useState(null);
-    let videoId = data.video;
+    let videoId = video;
 
     const videoIdRegex =
         /(youtu\.be\/|youtube\.com\/(watch\?(.*&)?v=|(embed|v)\/))([^\?&"'>]+)/;
 
-    if (data.video && data.video.includes("youtube")) {
-        videoId = data.video.match(videoIdRegex)[5];
+    if (video && video.includes("youtube")) {
+        videoId = video.match(videoIdRegex)[5];
     }
 
     const initYoutubeVideo = () => {
@@ -29,7 +31,7 @@ const Video = () => {
                     <button
                         className={styles.playButton}
                         aria-label={`Play video ${
-                            data.altTextVideo ? data.altTextVideo : ""
+                            altTextVideo ? altTextVideo : ""
                         }`}
                         onClick={initYoutubeVideo}
                     >
@@ -41,8 +43,8 @@ const Video = () => {
                         <Image
                             fill
                             priority
-                            src={data.thumbnail}
-                            alt={data.altText || data.altTextVideo}
+                            src={thumbnail}
+                            alt={altText || altTextVideo}
                         />
                     </div>
                 </div>
@@ -62,6 +64,13 @@ const Video = () => {
             )}
         </div>
     );
+};
+
+Video.propTypes = {
+    thumbnail: PropTypes.string,
+    video: PropTypes.string,
+    altText: PropTypes.string,
+    altTextVideo: PropTypes.string,
 };
 
 export default Video;

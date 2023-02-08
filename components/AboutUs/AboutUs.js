@@ -1,9 +1,22 @@
 import styles from "./AboutUs.module.scss";
-import data from "./about.json";
 import { Label, Title, Text, ProfessionCard } from "../../components";
 import Image from "next/image";
+import PropTypes from "prop-types";
 
-const AboutUs = () => {
+const AboutUs = (props) => {
+    const {
+        label,
+        title,
+        description,
+        mission,
+        cards,
+        bottomText,
+        backImage,
+        frontImage,
+        mobileImage,
+        circle,
+    } = props;
+
     return (
         <section className={styles.aboutUs}>
             <div className={styles.layer}>
@@ -41,7 +54,7 @@ const AboutUs = () => {
                     <div className={styles.backImage}>
                         <Image
                             className={styles.image}
-                            src={data.backImage}
+                            src={backImage}
                             alt="About us back image"
                             width={450}
                             height={612}
@@ -51,7 +64,7 @@ const AboutUs = () => {
                     <div className={styles.frontImage}>
                         <Image
                             className={styles.image}
-                            src={data.frontImage}
+                            src={frontImage}
                             alt="About us front image"
                             width={428}
                             height={340}
@@ -62,24 +75,24 @@ const AboutUs = () => {
                     <div className={styles.circle}>
                         <Text
                             className={styles.circleText}
-                            text={data.circle.text}
+                            text={circle.text}
                             color="white"
                             weight="normal"
                             p
                         />
                         <Title
                             className={styles.circleTitle}
-                            title={data.circle.amount}
+                            title={circle.amount}
                             level="div"
                             color="white"
                         />
                     </div>
                 </div>
                 <div className={styles.rightContent}>
-                    <Label text={data.label} type="secondary" />
+                    <Label text={label} type="secondary" />
                     <Title
                         className={styles.title}
-                        title={data.title}
+                        title={title}
                         textAlign="left"
                         level="div"
                         style="h2"
@@ -87,7 +100,7 @@ const AboutUs = () => {
                     />
                     <Text
                         className={styles.description}
-                        text={data.description}
+                        text={description}
                         size="md"
                         color="richBlack"
                         weight="normal"
@@ -95,14 +108,14 @@ const AboutUs = () => {
                     />
                     <Text
                         className={styles.mision}
-                        text={data.mision}
+                        text={mission}
                         size="lg"
                         color="richBlack"
                         weight="normal"
                         p
                     />
                     <div className={styles.cards}>
-                        {data.cards.map((icon, index) => {
+                        {cards.map((icon, index) => {
                             return (
                                 <div key={index} className={styles.cardSize}>
                                     <ProfessionCard
@@ -114,7 +127,7 @@ const AboutUs = () => {
                         })}
                     </div>
                     <Text
-                        text={data.bottomText}
+                        text={bottomText}
                         size="md"
                         color="richBlack"
                         weight="normal"
@@ -124,6 +137,19 @@ const AboutUs = () => {
             </div>
         </section>
     );
+};
+
+AboutUs.propTypes = {
+    label: PropTypes.string,
+    title: PropTypes.string,
+    description: PropTypes.string,
+    mission: PropTypes.string,
+    cards: PropTypes.array,
+    bottomText: PropTypes.string,
+    backImage: PropTypes.string,
+    frontImage: PropTypes.string,
+    mobileImage: PropTypes.string,
+    circle: PropTypes.object,
 };
 
 export default AboutUs;

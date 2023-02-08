@@ -1,13 +1,7 @@
-import {
-    SubpageHero,
-    TeamMembers,
-    PageSections,
-    Newsletter,
-    QuoteCarousel,
-} from "../../components";
-import data from "../../resources/data/about-us.json";
+import { SubpageHero, ContactBanner, Newsletter, Faq } from "../../components";
+import data from "../../resources/data/faq.json";
 
-export default function About() {
+export default function Faqs() {
     return (
         <>
             <SubpageHero
@@ -18,18 +12,12 @@ export default function About() {
                 title={data.subpageHero.title}
                 pageText={data.subpageHero.title}
             />
-            <TeamMembers
-                label={data.teamMembers.label}
-                title={data.teamMembers.title}
-                members={data.teamMembers.members}
-            />
-            <QuoteCarousel
-                quoteIcon={data.quoteCarousel.quoteIcon}
-                quotes={data.quoteCarousel.quotes}
-            />
-            <PageSections
-                sections={data.pageSections.sections}
-                hasLinks={data.pageSections.hasLinks}
+            <Faq title={data.faq.title} faqs={data.faq.faqs} />
+            <ContactBanner
+                question={data.contactBanner.question}
+                buttonText={data.contactBanner.buttonText}
+                buttonUrl={data.contactBanner.buttonUrl}
+                buttonTarget={data.contactBanner.buttonTarget}
             />
             <Newsletter
                 title={data.newsletter.title}

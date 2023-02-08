@@ -1,14 +1,16 @@
 import styles from "./TeamMembers.module.scss";
 import data from "./members.json";
 import { Label, Title, MemberCard } from "../../components";
+import PropTypes from "prop-types";
 
-const TeamMembers = () => {
+const TeamMembers = (props) => {
+    const { label, title, members } = props;
     return (
         <section className={styles.team}>
             <div className={styles.topSection}>
-                <Label text={data.label} type="secondary" />
+                <Label text={label} type="secondary" />
                 <Title
-                    title={data.title}
+                    title={title}
                     textAlign="center"
                     level="div"
                     style="h2"
@@ -17,7 +19,7 @@ const TeamMembers = () => {
             </div>
             <div className={styles.wrapper}>
                 <ul className={styles.memberCards}>
-                    {data.members.map((member, index) => {
+                    {members.map((member, index) => {
                         return (
                             <MemberCard
                                 member={member}
@@ -29,6 +31,12 @@ const TeamMembers = () => {
             </div>
         </section>
     );
+};
+
+TeamMembers.propTypes = {
+    label: PropTypes.string,
+    title: PropTypes.string,
+    members: PropTypes.array,
 };
 
 export default TeamMembers;

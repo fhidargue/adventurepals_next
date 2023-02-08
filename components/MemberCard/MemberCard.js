@@ -9,7 +9,7 @@ const MemberCard = (props) => {
     return (
         <li className={styles.card}>
             <div className={styles.imageContainer}>
-                <Image fill src={member.image} alt={member.imageAlt} />
+                <Image fill src={member.image} alt={member.imageAlt} priority />
             </div>
             <div className={styles.info}>
                 <span className={styles.position}>{member.position}</span>

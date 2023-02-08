@@ -1,0 +1,101 @@
+@import "../../styles/main.scss";
+
+.container {
+    padding: toRem(100px) 32px;
+    background-color: $color-green;
+
+    &:hover {
+        cursor: grab;
+    }
+}
+
+.wrapper {
+    max-width: toRem(952px);
+    margin: 0 auto;
+}
+
+.iconContainer {
+    width: toRem(87px);
+    height: toRem(87px);
+    background-color: $color-white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: toRem(45px);
+}
+
+.quoteContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.quoteTitle {
+    @include type-testimonial-copy();
+    margin-bottom: toRem(45px);
+
+    @media #{$breakpoint-mobile} {
+        margin-bottom: toRem(32px);
+    }
+}
+
+.quoteText {
+    font-size: toRem(30px);
+    line-height: toRem(50px);
+    margin-bottom: toRem(45px);
+
+    @media #{$breakpoint-mobile} {
+        font-size: toRem(24px);
+        line-height: toRem(32px);
+        margin-bottom: toRem(32px);
+    }
+}
+
+.quoteAuthor {
+    @include type-medium-copy();
+    margin-bottom: toRem(10px);
+}
+
+.quotePosition {
+    font-size: toRem(14px);
+    line-height: toRem(14px);
+}
+
+.layer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.greenCircle {
+    position: absolute;
+    top: 0;
+    left: toRem(180px);
+
+    @media (max-width: 1630px) {
+        left: toRem(160px);
+    }
+
+    @media #{$breakpoint-tablet} {
+        left: 0;
+    }
+}
+
+.yellowCircle {
+    position: absolute;
+    top: toRem(325px);
+    right: toRem(120px);
+
+    @media (max-width: 1630px) {
+        top: toRem(220px);
+        right: toRem(50px);
+    }
+
+    @media #{$breakpoint-tablet} {
+        top: toRem(150px);
+        right: 0;
+    }
+}
