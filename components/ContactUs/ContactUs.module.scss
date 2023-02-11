@@ -1,0 +1,147 @@
+@import "../../styles/main.scss";
+
+.container {
+    padding: toRem(120px) toRem(32px);
+    background-image: url("/images/components/contact-background.png");
+
+    @media #{$breakpoint-tablet} {
+        padding: toRem(80px) toRem(32px);
+    }
+}
+
+.wrapper {
+    max-width: toRem(1170px);
+    margin: 0 auto;
+}
+
+.information {
+    background-color: $color-platinum4;
+    display: flex;
+    justify-content: space-between;
+    border: solid toRem(1px) $color-black;
+    border-radius: toRem(4px);
+    margin-bottom: toRem(108px);
+
+    & > div:nth-child(2n) {
+        border-left: solid toRem(1px) $color-black;
+        border-right: solid toRem(1px) $color-black;
+    }
+
+    @media #{$breakpoint-tablet} {
+        margin-bottom: toRem(64px);
+        flex-direction: column;
+
+        & > div:nth-child(2n) {
+            border-left: none;
+            border-right: none;
+            border-top: solid toRem(1px) $color-black;
+            border-bottom: solid toRem(1px) $color-black;
+        }
+    }
+}
+
+.card {
+    padding: toRem(55px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+
+    @media #{$breakpoint-tablet} {
+        padding: toRem(32px);
+    }
+}
+
+.iconContainer {
+    width: toRem(82px);
+    height: toRem(82px);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-white;
+    margin-bottom: toRem(20px);
+}
+
+.cardTitle {
+    margin-bottom: toRem(30px);
+    font-size: toRem(24px);
+    line-height: toRem(36px);
+}
+
+.addressLine,
+.phoneText,
+.email {
+    @include type-main-copy();
+    line-height: toRem(32px);
+}
+
+.link {
+    text-decoration: none;
+    position: relative;
+    @include button-hover-underline($color-black);
+    @include button-focus-underline($color-black);
+}
+
+.formTitle {
+    font-size: toRem(36px);
+    line-height: toRem(36px);
+    margin-bottom: toRem(44px);
+
+    @media #{$breakpoint-mobile} {
+        font-size: toRem(28px);
+        line-height: toRem(28px);
+    }
+}
+
+.innerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(20px);
+}
+
+.submitButton {
+    max-width: fit-content;
+    max-height: toRem(55px);
+    border-radius: toRem(4px);
+    font-size: toRem(16px);
+    line-height: toRem(50px);
+    font-weight: 500;
+    font-family: $font-family-primary;
+    border: none;
+    padding: toRem(10px) toRem(42px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: $color-yellow2;
+    color: $color-black;
+    font-weight: 800;
+
+    @include button-hover($color-yellow-hover);
+    @include button-focus($color-black);
+
+    @media #{$breakpoint-mobile} {
+        max-width: none;
+        width: 100%;
+        border-radius: toRem(4px);
+    }
+}
+
+.messageContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: toRem(8px);
+    margin: toRem(60px) 0 toRem(30px);
+}
+
+.errorContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: toRem(8px);
+    margin: toRem(30px) 0;
+}

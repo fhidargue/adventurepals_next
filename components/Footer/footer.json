@@ -55,7 +55,7 @@
                 },
                 {
                     "text": "Contact",
-                    "url": "/",
+                    "url": "/contact",
                     "target": "_self"
                 },
                 {
@@ -96,7 +96,7 @@
             ]
         }
     ],
-    "copyRight": "All rights reserved 2022@",
+    "copyRight": "© All rights reserved 2023",
     "bottomLinks": [
         {
             "text": "Terms of use",

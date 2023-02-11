@@ -67,3 +67,11 @@
     gap: toRem(8px);
     margin: toRem(60px) 0 toRem(30px);
 }
+
+.errorContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: toRem(8px);
+    margin: toRem(30px) 0;
+}

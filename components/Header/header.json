@@ -123,7 +123,7 @@
     "contact": {
         "text": "Contact Us",
         "type": "heading",
-        "url": "/",
+        "url": "/contact",
         "target": "_self",
         "icon": "phone-white",
         "phone": "(88) 4826 48 01"

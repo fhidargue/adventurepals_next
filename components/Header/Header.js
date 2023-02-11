@@ -119,7 +119,7 @@ const Header = () => {
                             })}
                             <li className={styles.mobileLink}>
                                 <Button
-                                    tag="button"
+                                    tag="a"
                                     buttonType="button"
                                     color="black"
                                     text={data.contact.text}
@@ -198,7 +198,7 @@ const Header = () => {
                         />
                     </div>
                     <Button
-                        tag="button"
+                        tag="a"
                         buttonType="button"
                         color="black"
                         text={data.contact.text}

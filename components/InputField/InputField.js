@@ -17,6 +17,7 @@ const InputField = (props) => {
         maxLength,
         textArea,
         textAreaHeight,
+        fullSize,
     } = props;
 
     const ID_NAME = name.replace(" ", "-");
@@ -32,9 +33,9 @@ const InputField = (props) => {
 
     return (
         <div
-            className={`${styles.field} ${!valid && styles.invalid} ${
-                !!value && !!placeholder && styles.filled
-            } ${className}`}
+            className={`${styles.field} ${fullSize && styles.fullSizeField} ${
+                !valid && styles.invalid
+            } ${!!value && !!placeholder && styles.filled} ${className}`}
         >
             <label
                 htmlFor={inputId}
@@ -48,7 +49,7 @@ const InputField = (props) => {
                 <Tag
                     className={`${styles.input} ${
                         !!isTextArea && styles.inputTextArea
-                    }`}
+                    } ${fullSize && styles.fullSize}`}
                     id={inputId}
                     type={type}
                     name={name}
@@ -91,11 +92,13 @@ InputField.propTypes = {
     maxLength: PropTypes.number,
     textArea: PropTypes.bool,
     textAreaHeight: PropTypes.number,
+    fullSize: PropTypes.bool,
 };
 
 InputField.defaultProps = {
     valid: true,
     textArea: false,
+    fullSize: false,
 };
 
 export default InputField;

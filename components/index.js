@@ -39,3 +39,4 @@ export { default as HotelCard } from "./HotelCard";
 export { default as QuoteCarousel } from "./QuoteCarousel";
 export { default as Faq } from "./Faq";
 export { default as FaqButton } from "./FaqButton";
+export { default as ContactUs } from "./ContactUs";

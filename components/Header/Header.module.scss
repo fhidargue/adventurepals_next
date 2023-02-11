@@ -82,8 +82,10 @@
     align-items: center;
 
     @media #{$breakpoint-tablet} {
-        & button {
+        & button,
+        a {
             max-width: none;
+            text-decoration: none;
             width: 100%;
         }
     }

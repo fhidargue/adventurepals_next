@@ -86,7 +86,7 @@
         "altText": "Newsletter form",
         "placeholder": "Your email address",
         "button": {
-            "text": "SUBMIT"
+            "text": "Submit"
         },
         "message": "Subsrcibe for our upcoming latest articles and resources",
         "successMessage": "Your email was sent successfully!",
