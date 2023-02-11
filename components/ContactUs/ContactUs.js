@@ -97,6 +97,7 @@ const ContactUs = (props) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setError(false);
         if (validate(e.target)) {
             setValid(true);
 
