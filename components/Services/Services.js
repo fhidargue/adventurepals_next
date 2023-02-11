@@ -1,5 +1,4 @@
 import styles from "./Services.module.scss";
-import data from "./services.json";
 import Image from "next/image";
 import { Label, Title, Text, ServiceCard, Link } from "../../components";
 import PropTypes from "prop-types";

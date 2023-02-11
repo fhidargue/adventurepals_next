@@ -1,0 +1,56 @@
+{
+    "subpageHero": {
+        "backImage": "/images/components/up.png",
+        "homeLink": {
+            "text": "Home",
+            "url": "/",
+            "target": "_self"
+        },
+        "title": "Contact Us"
+    },
+    "contact": {
+        "information": {
+            "address": {
+                "icon": "map-pin",
+                "title": "Address",
+                "line1": "North road 115 80636",
+                "line2": "Munich Germany"
+            },
+            "phone": {
+                "icon": "phone",
+                "title": "Our Phone",
+                "number": "(88) 4826 4826"
+            },
+            "email": {
+                "icon": "send",
+                "title": "Email Address",
+                "address": "help247@gmail.com",
+                "address2": "info@gmail.com"
+            }
+        },
+        "form": {
+            "title": "Send us a message",
+            "namePlaceholder": "Full name",
+            "emailPlaceholder": "Email address",
+            "messagePlaceholder": "Type your message",
+            "buttonText": "Submit",
+            "successMessage": "Your message was sent successfully!",
+            "invalidName": "Please enter a valid name.",
+            "invalidEmail": "Please enter a valid email address.",
+            "invalidMessage": "Please enter a valid message.",
+            "systemErrorMessage": "Something went wrong, please try again later."
+        }
+    },
+    "newsletter": {
+        "title": "We believe in making the world a better experience",
+        "altText": "Newsletter form",
+        "placeholder": "Your email address",
+        "button": {
+            "text": "Submit"
+        },
+        "message": "Subsrcibe for our upcoming latest articles and resources",
+        "successMessage": "Your email was sent successfully!",
+        "invalidEmailMessage": "Please enter a valid email address.",
+        "systemErrorMessage": "Something went wrong, please try again later."
+    }
+}

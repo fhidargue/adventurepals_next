@@ -1,5 +1,4 @@
 import styles from "./TeamMembers.module.scss";
-import data from "./members.json";
 import { Label, Title, MemberCard } from "../../components";
 import PropTypes from "prop-types";
 

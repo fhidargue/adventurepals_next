@@ -16,23 +16,28 @@ const Newsletter = (props) => {
     } = props;
 
     const submitRef = useRef();
-    const EMAIL = "EMAIL";
 
+    const FORM_FIELDS = {
+        EMAIL: "email",
+    };
+
+    const [success, setSuccess] = useState(false);
+    const [error, setError] = useState(false);
     const [valid, setValid] = useState(true);
     const [state, setState] = useState({
         formData: {
-            [EMAIL]: "",
+            [FORM_FIELDS.EMAIL]: "",
         },
         invalidFields: [],
-        complete: false,
         nonFieldError: null,
     });
 
-    const { formData, invalidFields, complete } = state;
+    const { formData, invalidFields } = state;
 
     useEffect(() => {
         if (invalidFields.length !== 0) setValid(false);
     }, [invalidFields]);
+    console.log("invalidFields: ", invalidFields);
 
     const inputError = invalidFields.includes("SERVER_ERROR")
         ? systemErrorMessage
@@ -69,15 +74,21 @@ const Newsletter = (props) => {
         e.preventDefault();
         if (validate(e.target)) {
             setValid(true);
-            setState((prevState) => ({
-                ...prevState,
-                complete: undefined,
-            }));
 
-            console.log("SENT");
-
-            // TODO: implement sending form
-            const send = () => {};
+            fetch("/api/newsletter", {
+                method: "post",
+                body: JSON.stringify(formData),
+            })
+                .then((r) => {
+                    if (r.status === 200) {
+                        setSuccess(true);
+                    } else {
+                        setError(true);
+                    }
+                })
+                .catch(() => {
+                    setError(true);
+                });
         }
     };
 
@@ -91,17 +102,19 @@ const Newsletter = (props) => {
                     color="black"
                     className={styles.title}
                 />
-                {!complete && (
+                {!success && (
                     <form onSubmit={handleSubmit} noValidate>
                         <div className={styles.innerContainer}>
                             <InputField
                                 className={styles.input}
-                                name={EMAIL}
+                                name={FORM_FIELDS.EMAIL}
                                 type="email"
                                 placeholder={placeholder}
                                 onChange={onChangeInput}
-                                value={formData[EMAIL]}
-                                valid={valid}
+                                value={formData[FORM_FIELDS.EMAIL]}
+                                valid={
+                                    !invalidFields.includes(FORM_FIELDS.EMAIL)
+                                }
                                 message={inputError}
                                 required
                             />
@@ -117,7 +130,19 @@ const Newsletter = (props) => {
                         </div>
                     </form>
                 )}
-                {complete && valid && (
+                {error && (
+                    <div
+                        aria-live="assertive"
+                        className={styles.messageContainer}
+                    >
+                        <Text
+                            text={systemErrorMessage}
+                            size="main-copy"
+                            color="red"
+                        />
+                    </div>
+                )}
+                {success && valid && (
                     <div
                         aria-live="assertive"
                         className={styles.messageContainer}
@@ -126,7 +151,7 @@ const Newsletter = (props) => {
                         <Text
                             text={successMessage}
                             size="main-copy"
-                            color="white"
+                            color="black"
                         />
                     </div>
                 )}
